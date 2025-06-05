@@ -78,7 +78,7 @@ Although the full article (especially Part 3) details each step, here's a quick 
 
 This project is an open initiative continuous improvement. Your experience, feedback, and contributions are essential.
 
-*   **Discussions and Suggestions:** Please use the **"Issues"** section of this repository to ask questions, share your thoughts on the methodology, suggest improvements for the prompts, or point out areas માટે clarification.
+*   **Discussions and Suggestions:** Please use the **"Issues"** section of this repository to ask questions, share your thoughts on the methodology, suggest improvements for the prompts, or point out areas clarification.
 *   **Contributions to Prompts:** If you have concrete, tested modifications or additions to propose for the prompt files, please feel free to submit a **"Pull Request"**.
 
 Together, we can refine this approach to make human-AI collaboration even more powerful and accessible to all developers.
