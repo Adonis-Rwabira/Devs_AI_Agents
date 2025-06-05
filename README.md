@@ -1,4 +1,4 @@
-# Devs_AI_Agents: Master AI for Your Software Projects – Prompts and Methodology
+# Devs AI Agents: Master AI for Your Software Projects – Prompts and Methodology
 
 Welcome to the **Devs_AI_Agents** repository! This project is dedicated to all developers wish to transform their way of working with Artificial Intelligence, moving from simple use to a **strategic and highly productive collaboration**.
 
