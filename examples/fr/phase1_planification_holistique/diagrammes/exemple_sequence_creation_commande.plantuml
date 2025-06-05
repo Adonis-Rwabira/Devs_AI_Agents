@@ -1,0 +1,38 @@
+@startuml
+actor "Client" as User
+participant "API Gateway" as GW
+participant "OrderService" as OS
+participant "PaymentService" as PS
+queue "Event Bus" as EB
+participant "InventoryService" as IS
+participant "NotificationService" as NS
+
+User -> GW : POST /api/orders (Nouvelle Commande)
+GW -> OS : createOrder(orderDetails)
+activate OS
+OS -> PS : processPayment(paymentDetails)
+activate PS
+PS -->> OS : paymentConfirmation
+deactivate PS
+OS -> EB : publish(OrderCreatedEvent)
+OS -->> GW : orderPendingConfirmation
+deactivate OS
+GW -->> User : Commande en Cours de Traitement
+
+EB -> IS : consume(OrderCreatedEvent)
+activate IS
+IS -> IS : reserveStock(items)
+IS -> EB : publish(StockReservedEvent)
+deactivate IS
+
+EB -> NS : consume(OrderCreatedEvent)
+activate NS
+NS -> NS : sendOrderConfirmationEmail(user)
+deactivate NS
+
+EB -> OS : consume(PaymentProcessedEvent)
+activate OS
+OS -> OS : finalizeOrder(paymentConfirmation)
+OS -> EB : publish(OrderConfirmedEvent)
+deactivate OS
+@enduml
