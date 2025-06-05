@@ -8,7 +8,6 @@ The goal is to help you "tame AI," overcome common frustrations associated with 
 
 **Author:** Adonis Rwabira
 *Full-Stack Developer and Software Engineer*
-*Goma, Democratic Republic of Congo*
 *adonisbitigaywa@gmail.com*
 
 ---
