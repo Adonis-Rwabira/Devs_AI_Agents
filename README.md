@@ -90,6 +90,8 @@ This project is an open, evolving initiative. We believe in the power of collect
 
 *   **Discussions, Ideas & Suggestions:** Please use the **"Issues"** section of this repository to ask questions, share your insights on the methodology, suggest improvements for the prompts, or highlight areas for clarification or future exploration.
 *   **Direct Contributions:** If you have concrete, tested modifications or additions to propose (e.g., for the prompts, example configurations, or even an enhancement to the article content), please feel free to submit a **"Pull Request"**.
+*   **Discussions and Suggestions:** Please use the **"Issues"** section of this repository to ask questions, share your thoughts on the methodology, suggest improvements for the prompts, or point out areas clarification.
+*   **Contributions to Prompts:** If you have concrete, tested modifications or additions to propose for the prompt files, please feel free to submit a **"Pull Request"**.
 
 Together, let's forge a future where human-AI synergy unlocks new frontiers of excellence in software engineering.
 
