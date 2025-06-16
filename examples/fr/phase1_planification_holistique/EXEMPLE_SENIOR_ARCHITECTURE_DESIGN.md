@@ -1,4 +1,4 @@
-# EXEMPLE : Conception Architecturale Senior (Senior Architecture Design)
+# Conception Architecturale Senior
 
 Ce document est un exemple de conception architecturale, co-créé avec l'Agent Architecte IA. Il sert de plan directeur pour l'implémentation technique du projet.
 

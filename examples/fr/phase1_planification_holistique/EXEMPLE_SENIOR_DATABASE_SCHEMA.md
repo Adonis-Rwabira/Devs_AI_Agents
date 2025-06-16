@@ -1,4 +1,4 @@
-# EXEMPLE : Schéma de Base de Données Senior (Senior Database Schema)
+# Schéma de Base de Données Senior
 
 Ce document est un exemple de spécification de schéma de base de données, co-créé avec l'Agent Architecte IA. Il sert d'atlas détaillé de l'univers informationnel de l'application.
 

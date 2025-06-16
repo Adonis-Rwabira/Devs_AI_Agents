@@ -1,4 +1,4 @@
-# EXAMPLE: Senior UI/UX Specification
+# Senior UI/UX Specification
 
 This document is an example of UI/UX specification, co-created with the AI Architect Agent. It serves as a detailed guide for designing and implementing the user interface and user experience.
 

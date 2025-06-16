@@ -1,4 +1,4 @@
-# EXAMPLE: Senior Database Schema
+# Senior Database Schema
 
 This document is an example of a database schema specification, co-created with the AI Architect Agent. It serves as a detailed atlas of the application's informational universe.
 

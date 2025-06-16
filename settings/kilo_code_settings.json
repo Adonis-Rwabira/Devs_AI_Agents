@@ -3,10 +3,12 @@
     "currentApiConfigName": "default",
     "apiConfigs": {
       "default": {
+        "diffEnabled": true,
+        "fuzzyMatchThreshold": 1,
         "rateLimitSeconds": 0,
         "modelMaxTokens": 65535,
         "modelMaxThinkingTokens": 24576,
-        "apiModelId": "gemini-2.5-flash-preview-05-20:thinking",
+        "apiModelId": "gemini-2.5-flash-preview-05-20",
         "geminiApiKey": "",
         "apiProvider": "gemini",
         "id": "s0m9eyvhen"
@@ -17,7 +19,8 @@
       "architect": "s0m9eyvhen",
       "ask": "s0m9eyvhen",
       "debug": "s0m9eyvhen",
-      "orchestrator": "s0m9eyvhen"
+      "orchestrator": "s0m9eyvhen",
+      "senior-reverse-engineering-documentation-architect": "s0m9eyvhen"
     },
     "migrations": {
       "rateLimitSecondsMigrated": true,
@@ -28,7 +31,7 @@
   "globalSettings": {
     "condensingApiConfigId": "",
     "customCondensingPrompt": "",
-    "autoApprovalEnabled": false,
+    "autoApprovalEnabled": true,
     "alwaysAllowReadOnly": true,
     "alwaysAllowReadOnlyOutsideWorkspace": true,
     "alwaysAllowWrite": true,
@@ -36,7 +39,7 @@
     "writeDelayMs": 2000,
     "alwaysAllowBrowser": true,
     "alwaysApproveResubmit": true,
-    "requestDelaySeconds": 10,
+    "requestDelaySeconds": 30,
     "alwaysAllowMcp": true,
     "alwaysAllowModeSwitch": true,
     "alwaysAllowSubtasks": true,
@@ -77,6 +80,8 @@
     "terminalZdotdir": false,
     "terminalCompressProgressBar": true,
     "rateLimitSeconds": 0,
+    "diffEnabled": true,
+    "fuzzyMatchThreshold": 1,
     "experiments": {
       "powerSteering": false,
       "concurrentFileReads": false,
@@ -103,6 +108,17 @@
         },
         "all-minilm": {
           "dimension": 384
+        }
+      },
+      "openai-compatible": {
+        "text-embedding-3-small": {
+          "dimension": 1536
+        },
+        "text-embedding-3-large": {
+          "dimension": 3072
+        },
+        "text-embedding-ada-002": {
+          "dimension": 1536
         }
       }
     },
@@ -135,8 +151,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": true,
-          "githubStars": 50790,
-          "downloadCount": 67577,
+          "githubStars": 52420,
+          "downloadCount": 71410,
           "createdAt": "2025-02-17T22:22:00.256588Z",
           "updatedAt": "2025-02-17T22:22:00.256588Z"
         },
@@ -158,8 +174,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": false,
-          "githubStars": 4712,
-          "downloadCount": 55559,
+          "githubStars": 4905,
+          "downloadCount": 57153,
           "createdAt": "2025-03-11T02:29:39.738183Z",
           "updatedAt": "2025-03-11T02:29:39.738183Z"
         },
@@ -181,8 +197,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": true,
-          "githubStars": 50870,
-          "downloadCount": 39606,
+          "githubStars": 52485,
+          "downloadCount": 41404,
           "createdAt": "2025-02-18T05:45:21.365219Z",
           "updatedAt": "2025-02-18T05:45:21.365219Z"
         },
@@ -204,8 +220,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": true,
-          "githubStars": 51114,
-          "downloadCount": 36515,
+          "githubStars": 52869,
+          "downloadCount": 37551,
           "createdAt": "2025-02-19T02:22:25.91666Z",
           "updatedAt": "2025-02-19T02:22:25.91666Z"
         },
@@ -227,8 +243,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": false,
-          "githubStars": 9848,
-          "downloadCount": 34939,
+          "githubStars": 11251,
+          "downloadCount": 37389,
           "createdAt": "2025-04-18T21:16:05.668719Z",
           "updatedAt": "2025-04-18T21:16:05.668719Z"
         },
@@ -250,8 +266,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": false,
-          "githubStars": 412,
-          "downloadCount": 30834,
+          "githubStars": 423,
+          "downloadCount": 31618,
           "createdAt": "2025-02-19T00:55:59.104097Z",
           "updatedAt": "2025-02-19T00:55:59.104097Z"
         },
@@ -274,32 +290,9 @@
           "requiresApiKey": false,
           "isRecommended": false,
           "githubStars": 642,
-          "downloadCount": 23083,
+          "downloadCount": 23540,
           "createdAt": "2025-03-27T20:09:01.19066Z",
           "updatedAt": "2025-03-27T20:09:01.19066Z"
-        },
-        {
-          "mcpId": "github.com/mendableai/firecrawl-mcp-server",
-          "githubUrl": "https://github.com/mendableai/firecrawl-mcp-server",
-          "name": "FireCrawl",
-          "author": "mendableai",
-          "description": "Advanced web scraping and crawling server with JavaScript rendering, batch processing, smart content filtering, and structured data extraction capabilities.",
-          "codiconIcon": "globe",
-          "logoUrl": "https://storage.googleapis.com/cline_public_images/firecrawl.jpg",
-          "category": "search",
-          "tags": [
-            "web-scraping",
-            "crawling",
-            "data-extraction",
-            "batch-processing",
-            "content-filtering"
-          ],
-          "requiresApiKey": false,
-          "isRecommended": false,
-          "githubStars": 3248,
-          "downloadCount": 21582,
-          "createdAt": "2025-02-21T18:35:28.390028Z",
-          "updatedAt": "2025-02-21T18:35:28.390028Z"
         },
         {
           "mcpId": "github.com/executeautomation/mcp-playwright",
@@ -319,10 +312,33 @@
           ],
           "requiresApiKey": false,
           "isRecommended": false,
-          "githubStars": 3717,
-          "downloadCount": 21325,
+          "githubStars": 3798,
+          "downloadCount": 22053,
           "createdAt": "2025-02-17T22:45:31.388884Z",
           "updatedAt": "2025-02-17T22:45:31.388884Z"
+        },
+        {
+          "mcpId": "github.com/mendableai/firecrawl-mcp-server",
+          "githubUrl": "https://github.com/mendableai/firecrawl-mcp-server",
+          "name": "FireCrawl",
+          "author": "mendableai",
+          "description": "Advanced web scraping and crawling server with JavaScript rendering, batch processing, smart content filtering, and structured data extraction capabilities.",
+          "codiconIcon": "globe",
+          "logoUrl": "https://storage.googleapis.com/cline_public_images/firecrawl.jpg",
+          "category": "search",
+          "tags": [
+            "web-scraping",
+            "crawling",
+            "data-extraction",
+            "batch-processing",
+            "content-filtering"
+          ],
+          "requiresApiKey": false,
+          "isRecommended": false,
+          "githubStars": 3343,
+          "downloadCount": 21953,
+          "createdAt": "2025-02-21T18:35:28.390028Z",
+          "updatedAt": "2025-02-21T18:35:28.390028Z"
         },
         {
           "mcpId": "github.com/modelcontextprotocol/servers/tree/main/src/puppeteer",
@@ -342,8 +358,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": true,
-          "githubStars": 50909,
-          "downloadCount": 20801,
+          "githubStars": 52514,
+          "downloadCount": 21262,
           "createdAt": "2025-02-18T05:45:10.813537Z",
           "updatedAt": "2025-02-18T05:45:10.813537Z"
         },
@@ -365,8 +381,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": true,
-          "githubStars": 50794,
-          "downloadCount": 19175,
+          "githubStars": 52429,
+          "downloadCount": 19766,
           "createdAt": "2025-02-17T22:22:18.563691Z",
           "updatedAt": "2025-02-17T22:22:18.563691Z"
         },
@@ -388,8 +404,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": true,
-          "githubStars": 50904,
-          "downloadCount": 16782,
+          "githubStars": 52502,
+          "downloadCount": 17019,
           "createdAt": "2025-02-18T05:45:35.164727Z",
           "updatedAt": "2025-02-18T05:45:35.164727Z"
         },
@@ -411,8 +427,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": false,
-          "githubStars": 7566,
-          "downloadCount": 16354,
+          "githubStars": 7981,
+          "downloadCount": 16893,
           "createdAt": "2025-02-17T22:27:13.107046Z",
           "updatedAt": "2025-02-17T22:27:13.107046Z"
         },
@@ -434,8 +450,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": false,
-          "githubStars": 25,
-          "downloadCount": 13120,
+          "githubStars": 27,
+          "downloadCount": 13393,
           "createdAt": "2025-02-19T00:44:43.25332Z",
           "updatedAt": "2025-02-19T00:44:43.25332Z"
         },
@@ -457,8 +473,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": false,
-          "githubStars": 11545,
-          "downloadCount": 12721,
+          "githubStars": 11684,
+          "downloadCount": 12888,
           "createdAt": "2025-03-17T01:52:54.102355Z",
           "updatedAt": "2025-03-17T01:52:54.102355Z"
         },
@@ -480,8 +496,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": false,
-          "githubStars": 2202,
-          "downloadCount": 12355,
+          "githubStars": 2402,
+          "downloadCount": 12578,
           "createdAt": "2025-03-03T06:37:07.504691Z",
           "updatedAt": "2025-03-03T06:37:07.504691Z"
         },
@@ -503,8 +519,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": false,
-          "githubStars": 714,
-          "downloadCount": 10324,
+          "githubStars": 720,
+          "downloadCount": 10525,
           "createdAt": "2025-02-19T00:44:50.26296Z",
           "updatedAt": "2025-02-19T00:44:50.26296Z"
         },
@@ -526,33 +542,10 @@
           ],
           "requiresApiKey": false,
           "isRecommended": true,
-          "githubStars": 50808,
-          "downloadCount": 9932,
+          "githubStars": 52435,
+          "downloadCount": 10276,
           "createdAt": "2025-02-17T22:22:24.982087Z",
           "updatedAt": "2025-02-17T22:22:24.982087Z"
-        },
-        {
-          "mcpId": "github.com/modelcontextprotocol/servers/tree/main/src/sqlite",
-          "githubUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite",
-          "name": "SQLite",
-          "author": "modelcontextprotocol",
-          "description": "Provides database interaction and business intelligence capabilities through SQLite, enabling SQL queries, data analysis, and automated business insight generation.",
-          "codiconIcon": "database",
-          "logoUrl": "https://storage.googleapis.com/cline_public_images/sqlite.png",
-          "category": "databases",
-          "tags": [
-            "sql",
-            "data-analysis",
-            "business-intelligence",
-            "database-management",
-            "sqlite"
-          ],
-          "requiresApiKey": false,
-          "isRecommended": true,
-          "githubStars": 50915,
-          "downloadCount": 9016,
-          "createdAt": "2025-02-18T05:45:28.005191Z",
-          "updatedAt": "2025-02-18T05:45:28.005191Z"
         },
         {
           "mcpId": "github.com/awslabs/mcp/tree/main/src/aws-documentation-mcp-server",
@@ -573,9 +566,32 @@
           "requiresApiKey": false,
           "isRecommended": false,
           "githubStars": 3656,
-          "downloadCount": 8825,
+          "downloadCount": 9630,
           "createdAt": "2025-04-04T01:26:41.014628Z",
           "updatedAt": "2025-04-04T01:26:41.014628Z"
+        },
+        {
+          "mcpId": "github.com/modelcontextprotocol/servers/tree/main/src/sqlite",
+          "githubUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite",
+          "name": "SQLite",
+          "author": "modelcontextprotocol",
+          "description": "Provides database interaction and business intelligence capabilities through SQLite, enabling SQL queries, data analysis, and automated business insight generation.",
+          "codiconIcon": "database",
+          "logoUrl": "https://storage.googleapis.com/cline_public_images/sqlite.png",
+          "category": "databases",
+          "tags": [
+            "sql",
+            "data-analysis",
+            "business-intelligence",
+            "database-management",
+            "sqlite"
+          ],
+          "requiresApiKey": false,
+          "isRecommended": true,
+          "githubStars": 52513,
+          "downloadCount": 9232,
+          "createdAt": "2025-02-18T05:45:28.005191Z",
+          "updatedAt": "2025-02-18T05:45:28.005191Z"
         },
         {
           "mcpId": "github.com/modelcontextprotocol/servers/tree/main/src/sentry",
@@ -596,32 +612,9 @@
           "requiresApiKey": false,
           "isRecommended": true,
           "githubStars": 51517,
-          "downloadCount": 8401,
+          "downloadCount": 8531,
           "createdAt": "2025-02-19T02:22:38.723905Z",
           "updatedAt": "2025-02-19T02:22:38.723905Z"
-        },
-        {
-          "mcpId": "github.com/zcaceres/markdownify-mcp",
-          "githubUrl": "https://github.com/zcaceres/markdownify-mcp",
-          "name": "Markdownify",
-          "author": "zcaceres",
-          "description": "Converts various file types and web content (PDFs, images, audio, Office documents, web pages) into standardized Markdown format for easy reading and sharing.",
-          "codiconIcon": "markdown",
-          "logoUrl": "https://storage.googleapis.com/cline_public_images/markdownify.png",
-          "category": "file-systems",
-          "tags": [
-            "file-conversion",
-            "markdown",
-            "document-processing",
-            "content-transformation",
-            "format-conversion"
-          ],
-          "requiresApiKey": false,
-          "isRecommended": false,
-          "githubStars": 1700,
-          "downloadCount": 7542,
-          "createdAt": "2025-02-19T00:55:54.241944Z",
-          "updatedAt": "2025-02-19T00:55:54.241944Z"
         },
         {
           "mcpId": "github.com/modelcontextprotocol/servers/tree/main/src/postgres",
@@ -641,10 +634,33 @@
           ],
           "requiresApiKey": false,
           "isRecommended": true,
-          "githubStars": 50846,
-          "downloadCount": 7403,
+          "githubStars": 52466,
+          "downloadCount": 7692,
           "createdAt": "2025-02-17T22:23:06.685298Z",
           "updatedAt": "2025-02-17T22:23:06.685298Z"
+        },
+        {
+          "mcpId": "github.com/zcaceres/markdownify-mcp",
+          "githubUrl": "https://github.com/zcaceres/markdownify-mcp",
+          "name": "Markdownify",
+          "author": "zcaceres",
+          "description": "Converts various file types and web content (PDFs, images, audio, Office documents, web pages) into standardized Markdown format for easy reading and sharing.",
+          "codiconIcon": "markdown",
+          "logoUrl": "https://storage.googleapis.com/cline_public_images/markdownify.png",
+          "category": "file-systems",
+          "tags": [
+            "file-conversion",
+            "markdown",
+            "document-processing",
+            "content-transformation",
+            "format-conversion"
+          ],
+          "requiresApiKey": false,
+          "isRecommended": false,
+          "githubStars": 1735,
+          "downloadCount": 7645,
+          "createdAt": "2025-02-19T00:55:54.241944Z",
+          "updatedAt": "2025-02-19T00:55:54.241944Z"
         },
         {
           "mcpId": "github.com/tavily-ai/tavily-mcp",
@@ -664,8 +680,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": true,
-          "githubStars": 428,
-          "downloadCount": 7397,
+          "githubStars": 453,
+          "downloadCount": 7530,
           "createdAt": "2025-02-17T22:46:47.267489Z",
           "updatedAt": "2025-02-17T22:46:47.267489Z"
         },
@@ -687,8 +703,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": false,
-          "githubStars": 1505,
-          "downloadCount": 7007,
+          "githubStars": 1562,
+          "downloadCount": 7269,
           "createdAt": "2025-04-04T16:08:19.129363Z",
           "updatedAt": "2025-04-04T16:08:19.129363Z"
         },
@@ -710,10 +726,33 @@
           ],
           "requiresApiKey": false,
           "isRecommended": false,
-          "githubStars": 901,
-          "downloadCount": 6748,
+          "githubStars": 922,
+          "downloadCount": 6886,
           "createdAt": "2025-02-17T22:22:13.239338Z",
           "updatedAt": "2025-02-17T22:22:13.239338Z"
+        },
+        {
+          "mcpId": "github.com/github/github-mcp-server",
+          "githubUrl": "https://github.com/github/github-mcp-server",
+          "name": "GitHub",
+          "author": "github",
+          "description": "Provides comprehensive GitHub API integration for repository management, issues, pull requests, and code operations with authentication and enterprise support.",
+          "codiconIcon": "github",
+          "logoUrl": "https://storage.googleapis.com/cline_public_images/github.png",
+          "category": "version-control",
+          "tags": [
+            "github",
+            "repository-management",
+            "code-collaboration",
+            "git",
+            "source-control"
+          ],
+          "requiresApiKey": false,
+          "isRecommended": false,
+          "githubStars": 14972,
+          "downloadCount": 5821,
+          "createdAt": "2025-04-24T06:28:44.003471Z",
+          "updatedAt": "2025-04-24T06:28:44.003471Z"
         },
         {
           "mcpId": "github.com/NightTrek/Software-planning-mcp",
@@ -733,8 +772,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": false,
-          "githubStars": 250,
-          "downloadCount": 5584,
+          "githubStars": 258,
+          "downloadCount": 5704,
           "createdAt": "2025-02-18T23:03:50.971515Z",
           "updatedAt": "2025-02-18T23:03:50.971515Z"
         },
@@ -756,8 +795,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": false,
-          "githubStars": 7,
-          "downloadCount": 5434,
+          "githubStars": 8,
+          "downloadCount": 5663,
           "createdAt": "2025-02-18T23:04:29.548307Z",
           "updatedAt": "2025-02-18T23:04:29.548307Z"
         },
@@ -779,8 +818,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": true,
-          "githubStars": 50952,
-          "downloadCount": 5197,
+          "githubStars": 52607,
+          "downloadCount": 5329,
           "createdAt": "2025-02-18T05:45:06.878261Z",
           "updatedAt": "2025-02-18T05:45:06.878261Z"
         },
@@ -803,32 +842,9 @@
           "requiresApiKey": false,
           "isRecommended": false,
           "githubStars": 1983,
-          "downloadCount": 4842,
+          "downloadCount": 4973,
           "createdAt": "2025-04-10T03:19:01.544437Z",
           "updatedAt": "2025-04-10T03:19:01.544437Z"
-        },
-        {
-          "mcpId": "github.com/github/github-mcp-server",
-          "githubUrl": "https://github.com/github/github-mcp-server",
-          "name": "GitHub",
-          "author": "github",
-          "description": "Provides comprehensive GitHub API integration for repository management, issues, pull requests, and code operations with authentication and enterprise support.",
-          "codiconIcon": "github",
-          "logoUrl": "https://storage.googleapis.com/cline_public_images/github.png",
-          "category": "version-control",
-          "tags": [
-            "github",
-            "repository-management",
-            "code-collaboration",
-            "git",
-            "source-control"
-          ],
-          "requiresApiKey": false,
-          "isRecommended": false,
-          "githubStars": 14972,
-          "downloadCount": 4773,
-          "createdAt": "2025-04-24T06:28:44.003471Z",
-          "updatedAt": "2025-04-24T06:28:44.003471Z"
         },
         {
           "mcpId": "github.com/pashpashpash/mcp-webresearch",
@@ -849,7 +865,7 @@
           "requiresApiKey": false,
           "isRecommended": false,
           "githubStars": 18,
-          "downloadCount": 4526,
+          "downloadCount": 4624,
           "createdAt": "2025-02-18T23:05:09.409851Z",
           "updatedAt": "2025-02-18T23:05:09.409851Z"
         },
@@ -872,9 +888,32 @@
           "requiresApiKey": false,
           "isRecommended": false,
           "githubStars": 56,
-          "downloadCount": 4463,
+          "downloadCount": 4561,
           "createdAt": "2025-02-18T23:03:57.065833Z",
           "updatedAt": "2025-02-18T23:03:57.065833Z"
+        },
+        {
+          "mcpId": "github.com/awslabs/mcp/tree/main/src/core-mcp-server",
+          "githubUrl": "https://github.com/awslabs/mcp/tree/main/src/core-mcp-server",
+          "name": "Core Server",
+          "author": "awslabs",
+          "description": "Manages and coordinates MCP servers, providing automated installation, configuration management, and orchestration of AWS Labs servers with centralized logging and environment control.",
+          "codiconIcon": "server-environment",
+          "logoUrl": "https://storage.googleapis.com/cline_public_images/aws.png",
+          "category": "developer-tools",
+          "tags": [
+            "server-management",
+            "configuration",
+            "aws-integration",
+            "automation",
+            "orchestration"
+          ],
+          "requiresApiKey": false,
+          "isRecommended": false,
+          "githubStars": 3687,
+          "downloadCount": 4541,
+          "createdAt": "2025-04-04T19:48:29.604163Z",
+          "updatedAt": "2025-04-04T19:48:29.604163Z"
         },
         {
           "mcpId": "github.com/Garoth/echo-mcp",
@@ -895,32 +934,9 @@
           "requiresApiKey": false,
           "isRecommended": false,
           "githubStars": 11,
-          "downloadCount": 4427,
+          "downloadCount": 4433,
           "createdAt": "2025-03-18T05:52:43.105423Z",
           "updatedAt": "2025-03-18T05:52:43.105423Z"
-        },
-        {
-          "mcpId": "github.com/awslabs/mcp/tree/main/src/core-mcp-server",
-          "githubUrl": "https://github.com/awslabs/mcp/tree/main/src/core-mcp-server",
-          "name": "Core Server",
-          "author": "awslabs",
-          "description": "Manages and coordinates MCP servers, providing automated installation, configuration management, and orchestration of AWS Labs servers with centralized logging and environment control.",
-          "codiconIcon": "server-environment",
-          "logoUrl": "https://storage.googleapis.com/cline_public_images/aws.png",
-          "category": "developer-tools",
-          "tags": [
-            "server-management",
-            "configuration",
-            "aws-integration",
-            "automation",
-            "orchestration"
-          ],
-          "requiresApiKey": false,
-          "isRecommended": false,
-          "githubStars": 3439,
-          "downloadCount": 4244,
-          "createdAt": "2025-04-04T19:48:29.604163Z",
-          "updatedAt": "2025-04-04T19:48:29.604163Z"
         },
         {
           "mcpId": "github.com/modelcontextprotocol/servers/tree/main/src/gitlab",
@@ -940,8 +956,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": true,
-          "githubStars": 50886,
-          "downloadCount": 4139,
+          "githubStars": 52512,
+          "downloadCount": 4265,
           "createdAt": "2025-02-17T22:46:26.88278Z",
           "updatedAt": "2025-02-17T22:46:26.88278Z"
         },
@@ -964,7 +980,7 @@
           "requiresApiKey": false,
           "isRecommended": false,
           "githubStars": 29,
-          "downloadCount": 3815,
+          "downloadCount": 3865,
           "createdAt": "2025-02-18T23:05:46.398856Z",
           "updatedAt": "2025-02-18T23:05:46.398856Z"
         },
@@ -986,8 +1002,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": true,
-          "githubStars": 50943,
-          "downloadCount": 3731,
+          "githubStars": 52607,
+          "downloadCount": 3818,
           "createdAt": "2025-02-17T22:46:16.116171Z",
           "updatedAt": "2025-02-17T22:46:16.116171Z"
         },
@@ -1009,10 +1025,33 @@
           ],
           "requiresApiKey": false,
           "isRecommended": true,
-          "githubStars": 51057,
-          "downloadCount": 3493,
+          "githubStars": 52846,
+          "downloadCount": 3550,
           "createdAt": "2025-02-18T05:45:15.150896Z",
           "updatedAt": "2025-02-18T05:45:15.150896Z"
+        },
+        {
+          "mcpId": "github.com/awslabs/mcp/tree/main/src/cdk-mcp-server",
+          "githubUrl": "https://github.com/awslabs/mcp/tree/main/src/cdk-mcp-server",
+          "name": "AWS CDK Assistant",
+          "author": "awslabs",
+          "description": "Provides guidance on AWS CDK best practices, infrastructure patterns, and security compliance through CDK Nag integration and AWS Solutions Constructs.",
+          "codiconIcon": "cloud",
+          "logoUrl": "https://storage.googleapis.com/cline_public_images/aws.png",
+          "category": "cloud-platforms",
+          "tags": [
+            "aws-cdk",
+            "infrastructure-as-code",
+            "security-compliance",
+            "cloud-architecture",
+            "aws"
+          ],
+          "requiresApiKey": false,
+          "isRecommended": false,
+          "githubStars": 3658,
+          "downloadCount": 3243,
+          "createdAt": "2025-04-04T01:24:58.958958Z",
+          "updatedAt": "2025-04-04T01:24:58.958958Z"
         },
         {
           "mcpId": "github.com/browserbase/mcp-server-browserbase/tree/main/stagehand",
@@ -1032,8 +1071,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": false,
-          "githubStars": 1787,
-          "downloadCount": 3213,
+          "githubStars": 1845,
+          "downloadCount": 3236,
           "createdAt": "2025-03-28T18:55:55.022866Z",
           "updatedAt": "2025-03-28T18:55:55.022866Z"
         },
@@ -1056,32 +1095,9 @@
           "requiresApiKey": false,
           "isRecommended": false,
           "githubStars": 12,
-          "downloadCount": 3151,
+          "downloadCount": 3158,
           "createdAt": "2025-02-23T01:49:49.815207Z",
           "updatedAt": "2025-02-23T01:49:49.815207Z"
-        },
-        {
-          "mcpId": "github.com/awslabs/mcp/tree/main/src/cdk-mcp-server",
-          "githubUrl": "https://github.com/awslabs/mcp/tree/main/src/cdk-mcp-server",
-          "name": "AWS CDK Assistant",
-          "author": "awslabs",
-          "description": "Provides guidance on AWS CDK best practices, infrastructure patterns, and security compliance through CDK Nag integration and AWS Solutions Constructs.",
-          "codiconIcon": "cloud",
-          "logoUrl": "https://storage.googleapis.com/cline_public_images/aws.png",
-          "category": "cloud-platforms",
-          "tags": [
-            "aws-cdk",
-            "infrastructure-as-code",
-            "security-compliance",
-            "cloud-architecture",
-            "aws"
-          ],
-          "requiresApiKey": false,
-          "isRecommended": false,
-          "githubStars": 3658,
-          "downloadCount": 2987,
-          "createdAt": "2025-04-04T01:24:58.958958Z",
-          "updatedAt": "2025-04-04T01:24:58.958958Z"
         },
         {
           "mcpId": "github.com/justinpbarnett/unity-mcp",
@@ -1102,9 +1118,32 @@
           "requiresApiKey": false,
           "isRecommended": false,
           "githubStars": 2148,
-          "downloadCount": 2940,
+          "downloadCount": 3007,
           "createdAt": "2025-03-27T20:06:42.151332Z",
           "updatedAt": "2025-03-27T20:06:42.151332Z"
+        },
+        {
+          "mcpId": "github.com/awslabs/mcp/tree/main/src/aws-diagram-mcp-server",
+          "githubUrl": "https://github.com/awslabs/mcp/tree/main/src/aws-diagram-mcp-server",
+          "name": "AWS Diagrams",
+          "author": "awslabs",
+          "description": "Creates professional AWS architecture diagrams, sequence diagrams, flow charts, and class diagrams using Python code and the Diagrams package DSL.",
+          "codiconIcon": "symbol-structure",
+          "logoUrl": "https://storage.googleapis.com/cline_public_images/aws.png",
+          "category": "developer-tools",
+          "tags": [
+            "diagrams",
+            "aws-architecture",
+            "visualization",
+            "documentation",
+            "python"
+          ],
+          "requiresApiKey": false,
+          "isRecommended": false,
+          "githubStars": 3627,
+          "downloadCount": 2941,
+          "createdAt": "2025-04-24T06:33:05.379596Z",
+          "updatedAt": "2025-04-24T06:33:05.379596Z"
         },
         {
           "mcpId": "github.com/pashpashpash/google-calendar-mcp",
@@ -1125,7 +1164,7 @@
           "requiresApiKey": false,
           "isRecommended": false,
           "githubStars": 17,
-          "downloadCount": 2898,
+          "downloadCount": 2934,
           "createdAt": "2025-02-19T01:25:47.301582Z",
           "updatedAt": "2025-02-19T01:25:47.301582Z"
         },
@@ -1148,7 +1187,7 @@
           "requiresApiKey": false,
           "isRecommended": true,
           "githubStars": 51135,
-          "downloadCount": 2847,
+          "downloadCount": 2912,
           "createdAt": "2025-02-18T05:44:51.508867Z",
           "updatedAt": "2025-02-18T05:44:51.508867Z"
         },
@@ -1171,32 +1210,9 @@
           "requiresApiKey": false,
           "isRecommended": false,
           "githubStars": 284,
-          "downloadCount": 2828,
+          "downloadCount": 2872,
           "createdAt": "2025-04-02T02:03:55.398324Z",
           "updatedAt": "2025-04-02T02:03:55.398324Z"
-        },
-        {
-          "mcpId": "github.com/awslabs/mcp/tree/main/src/aws-diagram-mcp-server",
-          "githubUrl": "https://github.com/awslabs/mcp/tree/main/src/aws-diagram-mcp-server",
-          "name": "AWS Diagrams",
-          "author": "awslabs",
-          "description": "Creates professional AWS architecture diagrams, sequence diagrams, flow charts, and class diagrams using Python code and the Diagrams package DSL.",
-          "codiconIcon": "symbol-structure",
-          "logoUrl": "https://storage.googleapis.com/cline_public_images/aws.png",
-          "category": "developer-tools",
-          "tags": [
-            "diagrams",
-            "aws-architecture",
-            "visualization",
-            "documentation",
-            "python"
-          ],
-          "requiresApiKey": false,
-          "isRecommended": false,
-          "githubStars": 3627,
-          "downloadCount": 2744,
-          "createdAt": "2025-04-24T06:33:05.379596Z",
-          "updatedAt": "2025-04-24T06:33:05.379596Z"
         },
         {
           "mcpId": "github.com/lharries/whatsapp-mcp",
@@ -1216,8 +1232,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": false,
-          "githubStars": 3968,
-          "downloadCount": 2628,
+          "githubStars": 4070,
+          "downloadCount": 2668,
           "createdAt": "2025-03-31T18:44:25.818276Z",
           "updatedAt": "2025-03-31T18:44:25.818276Z"
         },
@@ -1239,8 +1255,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": false,
-          "githubStars": 1677,
-          "downloadCount": 2575,
+          "githubStars": 1737,
+          "downloadCount": 2611,
           "createdAt": "2025-04-05T08:51:23.021478Z",
           "updatedAt": "2025-04-05T08:51:23.021478Z"
         },
@@ -1263,7 +1279,7 @@
           "requiresApiKey": false,
           "isRecommended": false,
           "githubStars": 21,
-          "downloadCount": 2506,
+          "downloadCount": 2602,
           "createdAt": "2025-02-18T23:06:16.564387Z",
           "updatedAt": "2025-02-18T23:06:16.564387Z"
         },
@@ -1286,7 +1302,7 @@
           "requiresApiKey": false,
           "isRecommended": true,
           "githubStars": 1814,
-          "downloadCount": 2268,
+          "downloadCount": 2294,
           "createdAt": "2025-02-18T06:27:48.955864Z",
           "updatedAt": "2025-02-18T06:27:48.955864Z"
         },
@@ -1309,9 +1325,32 @@
           "requiresApiKey": false,
           "isRecommended": false,
           "githubStars": 12,
-          "downloadCount": 2250,
+          "downloadCount": 2293,
           "createdAt": "2025-02-18T23:04:41.146991Z",
           "updatedAt": "2025-02-18T23:04:41.146991Z"
+        },
+        {
+          "mcpId": "github.com/modelcontextprotocol/servers/tree/main/src/slack",
+          "githubUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/slack",
+          "name": "Slack",
+          "author": "modelcontextprotocol",
+          "description": "Enables AI assistants to interact with Slack workspaces, providing tools for messaging, channel management, reactions, user profiles, and thread management.",
+          "codiconIcon": "comment-discussion",
+          "logoUrl": "https://storage.googleapis.com/cline_public_images/slack.png",
+          "category": "communication",
+          "tags": [
+            "slack",
+            "messaging",
+            "team-collaboration",
+            "chat",
+            "workspace-management"
+          ],
+          "requiresApiKey": false,
+          "isRecommended": true,
+          "githubStars": 52656,
+          "downloadCount": 2281,
+          "createdAt": "2025-02-17T22:23:00.036614Z",
+          "updatedAt": "2025-02-17T22:23:00.036614Z"
         },
         {
           "mcpId": "github.com/Garoth/dalle-mcp",
@@ -1332,32 +1371,9 @@
           "requiresApiKey": false,
           "isRecommended": false,
           "githubStars": 6,
-          "downloadCount": 2208,
+          "downloadCount": 2232,
           "createdAt": "2025-03-18T05:52:01.005466Z",
           "updatedAt": "2025-03-18T05:52:01.005466Z"
-        },
-        {
-          "mcpId": "github.com/modelcontextprotocol/servers/tree/main/src/slack",
-          "githubUrl": "https://github.com/modelcontextprotocol/servers/tree/main/src/slack",
-          "name": "Slack",
-          "author": "modelcontextprotocol",
-          "description": "Enables AI assistants to interact with Slack workspaces, providing tools for messaging, channel management, reactions, user profiles, and thread management.",
-          "codiconIcon": "comment-discussion",
-          "logoUrl": "https://storage.googleapis.com/cline_public_images/slack.png",
-          "category": "communication",
-          "tags": [
-            "slack",
-            "messaging",
-            "team-collaboration",
-            "chat",
-            "workspace-management"
-          ],
-          "requiresApiKey": false,
-          "isRecommended": true,
-          "githubStars": 50993,
-          "downloadCount": 2178,
-          "createdAt": "2025-02-17T22:23:00.036614Z",
-          "updatedAt": "2025-02-17T22:23:00.036614Z"
         },
         {
           "mcpId": "github.com/anaisbetts/mcp-youtube",
@@ -1378,7 +1394,7 @@
           "requiresApiKey": false,
           "isRecommended": true,
           "githubStars": 360,
-          "downloadCount": 1954,
+          "downloadCount": 2011,
           "createdAt": "2025-02-17T22:27:37.384353Z",
           "updatedAt": "2025-02-17T22:27:37.384353Z"
         },
@@ -1401,7 +1417,7 @@
           "requiresApiKey": false,
           "isRecommended": false,
           "githubStars": 31,
-          "downloadCount": 1934,
+          "downloadCount": 1946,
           "createdAt": "2025-02-20T23:51:50.467973Z",
           "updatedAt": "2025-02-20T23:51:50.467973Z"
         },
@@ -1424,9 +1440,32 @@
           "requiresApiKey": false,
           "isRecommended": false,
           "githubStars": 0,
-          "downloadCount": 1750,
+          "downloadCount": 1772,
           "createdAt": "2025-04-18T21:18:45.87301Z",
           "updatedAt": "2025-04-18T21:18:45.87301Z"
+        },
+        {
+          "mcpId": "github.com/Operative-Sh/web-eval-agent",
+          "githubUrl": "https://github.com/Operative-Sh/web-eval-agent",
+          "name": "Web Eval Agent",
+          "author": "Operative-Sh",
+          "description": "Autonomous web testing and debugging agent that executes and validates web applications directly in your code editor, with network traffic monitoring and console error detection.",
+          "codiconIcon": "debug",
+          "logoUrl": "https://storage.googleapis.com/cline_public_images/web-eval-agent.png",
+          "category": "browser-automation",
+          "tags": [
+            "web-testing",
+            "debugging",
+            "automation",
+            "browser-control",
+            "qa-automation"
+          ],
+          "requiresApiKey": false,
+          "isRecommended": false,
+          "githubStars": 992,
+          "downloadCount": 1710,
+          "createdAt": "2025-04-24T06:56:24.809925Z",
+          "updatedAt": "2025-04-24T06:56:24.809925Z"
         },
         {
           "mcpId": "github.com/codegen-sh/codegen-sdk/tree/develop/codegen-examples/examples/codegen-mcp-server",
@@ -1447,7 +1486,7 @@
           "requiresApiKey": false,
           "isRecommended": true,
           "githubStars": 457,
-          "downloadCount": 1682,
+          "downloadCount": 1695,
           "createdAt": "2025-02-18T23:04:15.445062Z",
           "updatedAt": "2025-02-18T23:04:15.445062Z"
         },
@@ -1470,32 +1509,9 @@
           "requiresApiKey": false,
           "isRecommended": false,
           "githubStars": 297,
-          "downloadCount": 1656,
+          "downloadCount": 1669,
           "createdAt": "2025-03-03T19:20:12.867689Z",
           "updatedAt": "2025-03-03T19:20:12.867689Z"
-        },
-        {
-          "mcpId": "github.com/Operative-Sh/web-eval-agent",
-          "githubUrl": "https://github.com/Operative-Sh/web-eval-agent",
-          "name": "Web Eval Agent",
-          "author": "Operative-Sh",
-          "description": "Autonomous web testing and debugging agent that executes and validates web applications directly in your code editor, with network traffic monitoring and console error detection.",
-          "codiconIcon": "debug",
-          "logoUrl": "https://storage.googleapis.com/cline_public_images/web-eval-agent.png",
-          "category": "browser-automation",
-          "tags": [
-            "web-testing",
-            "debugging",
-            "automation",
-            "browser-control",
-            "qa-automation"
-          ],
-          "requiresApiKey": false,
-          "isRecommended": false,
-          "githubStars": 992,
-          "downloadCount": 1624,
-          "createdAt": "2025-04-24T06:56:24.809925Z",
-          "updatedAt": "2025-04-24T06:56:24.809925Z"
         },
         {
           "mcpId": "github.com/cloudflare/mcp-server-cloudflare",
@@ -1516,7 +1532,7 @@
           "requiresApiKey": false,
           "isRecommended": true,
           "githubStars": 2295,
-          "downloadCount": 1571,
+          "downloadCount": 1609,
           "createdAt": "2025-02-17T22:22:47.133329Z",
           "updatedAt": "2025-02-17T22:22:47.133329Z"
         },
@@ -1539,7 +1555,7 @@
           "requiresApiKey": false,
           "isRecommended": false,
           "githubStars": 356,
-          "downloadCount": 1525,
+          "downloadCount": 1532,
           "createdAt": "2025-03-03T11:05:30.27228Z",
           "updatedAt": "2025-03-03T11:05:30.27228Z"
         },
@@ -1561,8 +1577,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": true,
-          "githubStars": 812,
-          "downloadCount": 1476,
+          "githubStars": 820,
+          "downloadCount": 1508,
           "createdAt": "2025-02-18T06:28:40.359883Z",
           "updatedAt": "2025-02-18T06:28:40.359883Z"
         },
@@ -1584,8 +1600,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": false,
-          "githubStars": 717,
-          "downloadCount": 1408,
+          "githubStars": 742,
+          "downloadCount": 1461,
           "createdAt": "2025-02-17T22:30:26.383193Z",
           "updatedAt": "2025-02-17T22:30:26.383193Z"
         },
@@ -1608,32 +1624,32 @@
           "requiresApiKey": false,
           "isRecommended": false,
           "githubStars": 378,
-          "downloadCount": 1312,
+          "downloadCount": 1343,
           "createdAt": "2025-02-18T06:28:19.461292Z",
           "updatedAt": "2025-02-18T06:28:19.461292Z"
         },
         {
-          "mcpId": "github.com/canvrno/ProxmoxMCP",
-          "githubUrl": "https://github.com/canvrno/ProxmoxMCP",
-          "name": "Proxmox Manager",
-          "author": "canvrno",
-          "description": "A server for managing Proxmox hypervisors, providing tools to control nodes, VMs, containers, storage, and execute console commands in virtual machines.",
-          "codiconIcon": "server",
-          "logoUrl": "https://storage.googleapis.com/cline_public_images/proxmox-manager.png",
-          "category": "virtualization",
+          "mcpId": "github.com/awslabs/mcp/tree/main/src/bedrock-kb-retrieval-mcp-server",
+          "githubUrl": "https://github.com/awslabs/mcp/tree/main/src/bedrock-kb-retrieval-mcp-server",
+          "name": "Bedrock Knowledge Base",
+          "author": "awslabs",
+          "description": "Enables natural language querying of Amazon Bedrock Knowledge Bases with features for discovery, filtering, and result reranking.",
+          "codiconIcon": "library",
+          "logoUrl": "https://storage.googleapis.com/cline_public_images/aws.png",
+          "category": "knowledge-memory",
           "tags": [
-            "proxmox",
-            "virtualization",
-            "vm-management",
-            "server-management",
-            "infrastructure"
+            "aws-bedrock",
+            "knowledge-base",
+            "search",
+            "retrieval",
+            "document-management"
           ],
           "requiresApiKey": false,
           "isRecommended": false,
-          "githubStars": 107,
-          "downloadCount": 1238,
-          "createdAt": "2025-02-19T07:28:09.637633Z",
-          "updatedAt": "2025-02-19T07:28:09.637633Z"
+          "githubStars": 3668,
+          "downloadCount": 1278,
+          "createdAt": "2025-04-04T01:25:39.965466Z",
+          "updatedAt": "2025-04-04T01:25:39.965466Z"
         },
         {
           "mcpId": "github.com/exa-labs/exa-mcp-server",
@@ -1653,10 +1669,33 @@
           ],
           "requiresApiKey": false,
           "isRecommended": true,
-          "githubStars": 1672,
-          "downloadCount": 1233,
+          "githubStars": 1692,
+          "downloadCount": 1277,
           "createdAt": "2025-02-17T22:46:53.872366Z",
           "updatedAt": "2025-02-17T22:46:53.872366Z"
+        },
+        {
+          "mcpId": "github.com/canvrno/ProxmoxMCP",
+          "githubUrl": "https://github.com/canvrno/ProxmoxMCP",
+          "name": "Proxmox Manager",
+          "author": "canvrno",
+          "description": "A server for managing Proxmox hypervisors, providing tools to control nodes, VMs, containers, storage, and execute console commands in virtual machines.",
+          "codiconIcon": "server",
+          "logoUrl": "https://storage.googleapis.com/cline_public_images/proxmox-manager.png",
+          "category": "virtualization",
+          "tags": [
+            "proxmox",
+            "virtualization",
+            "vm-management",
+            "server-management",
+            "infrastructure"
+          ],
+          "requiresApiKey": false,
+          "isRecommended": false,
+          "githubStars": 113,
+          "downloadCount": 1262,
+          "createdAt": "2025-02-19T07:28:09.637633Z",
+          "updatedAt": "2025-02-19T07:28:09.637633Z"
         },
         {
           "mcpId": "github.com/elevenlabs/elevenlabs-mcp",
@@ -1677,32 +1716,9 @@
           "requiresApiKey": false,
           "isRecommended": false,
           "githubStars": 722,
-          "downloadCount": 1194,
+          "downloadCount": 1211,
           "createdAt": "2025-04-07T20:07:46.994814Z",
           "updatedAt": "2025-04-07T20:07:46.994814Z"
-        },
-        {
-          "mcpId": "github.com/awslabs/mcp/tree/main/src/bedrock-kb-retrieval-mcp-server",
-          "githubUrl": "https://github.com/awslabs/mcp/tree/main/src/bedrock-kb-retrieval-mcp-server",
-          "name": "Bedrock Knowledge Base",
-          "author": "awslabs",
-          "description": "Enables natural language querying of Amazon Bedrock Knowledge Bases with features for discovery, filtering, and result reranking.",
-          "codiconIcon": "library",
-          "logoUrl": "https://storage.googleapis.com/cline_public_images/aws.png",
-          "category": "knowledge-memory",
-          "tags": [
-            "aws-bedrock",
-            "knowledge-base",
-            "search",
-            "retrieval",
-            "document-management"
-          ],
-          "requiresApiKey": false,
-          "isRecommended": false,
-          "githubStars": 3426,
-          "downloadCount": 1175,
-          "createdAt": "2025-04-04T01:25:39.965466Z",
-          "updatedAt": "2025-04-04T01:25:39.965466Z"
         },
         {
           "mcpId": "github.com/pashpashpash/mcp-spotify",
@@ -1723,7 +1739,7 @@
           "requiresApiKey": false,
           "isRecommended": false,
           "githubStars": 4,
-          "downloadCount": 1145,
+          "downloadCount": 1146,
           "createdAt": "2025-02-19T01:25:58.60191Z",
           "updatedAt": "2025-02-19T01:25:58.60191Z"
         },
@@ -1746,7 +1762,7 @@
           "requiresApiKey": false,
           "isRecommended": true,
           "githubStars": 264,
-          "downloadCount": 1077,
+          "downloadCount": 1091,
           "createdAt": "2025-02-18T05:45:58.533295Z",
           "updatedAt": "2025-02-18T05:45:58.533295Z"
         },
@@ -1769,32 +1785,9 @@
           "requiresApiKey": false,
           "isRecommended": true,
           "githubStars": 635,
-          "downloadCount": 1060,
+          "downloadCount": 1088,
           "createdAt": "2025-02-18T05:47:07.82849Z",
           "updatedAt": "2025-02-18T05:47:07.82849Z"
-        },
-        {
-          "mcpId": "github.com/domdomegg/airtable-mcp-server",
-          "githubUrl": "https://github.com/domdomegg/airtable-mcp-server",
-          "name": "Airtable",
-          "author": "domdomegg",
-          "description": "Provides read and write access to Airtable databases, enabling schema inspection, record management, and table operations through comprehensive API integration.",
-          "codiconIcon": "database",
-          "logoUrl": "https://storage.googleapis.com/cline_public_images/airtable.png",
-          "category": "databases",
-          "tags": [
-            "airtable",
-            "database-management",
-            "records",
-            "schemas",
-            "crud"
-          ],
-          "requiresApiKey": false,
-          "isRecommended": false,
-          "githubStars": 152,
-          "downloadCount": 1034,
-          "createdAt": "2025-02-19T02:22:31.761899Z",
-          "updatedAt": "2025-02-19T02:22:31.761899Z"
         },
         {
           "mcpId": "github.com/awslabs/mcp/tree/main/src/cost-analysis-mcp-server",
@@ -1814,33 +1807,33 @@
           ],
           "requiresApiKey": false,
           "isRecommended": false,
-          "githubStars": 3454,
-          "downloadCount": 1024,
+          "githubStars": 3703,
+          "downloadCount": 1076,
           "createdAt": "2025-04-04T01:26:17.400469Z",
           "updatedAt": "2025-04-04T01:26:17.400469Z"
         },
         {
-          "mcpId": "github.com/pashpashpash/mcp-discord",
-          "githubUrl": "https://github.com/pashpashpash/mcp-discord",
-          "name": "Discord",
-          "author": "pashpashpash",
-          "description": "Provides comprehensive Discord server management capabilities including message handling, channel management, role administration, and webhook integration.",
-          "codiconIcon": "comment-discussion",
-          "logoUrl": "https://storage.googleapis.com/cline_public_images/discord.png",
-          "category": "communication",
+          "mcpId": "github.com/domdomegg/airtable-mcp-server",
+          "githubUrl": "https://github.com/domdomegg/airtable-mcp-server",
+          "name": "Airtable",
+          "author": "domdomegg",
+          "description": "Provides read and write access to Airtable databases, enabling schema inspection, record management, and table operations through comprehensive API integration.",
+          "codiconIcon": "database",
+          "logoUrl": "https://storage.googleapis.com/cline_public_images/airtable.png",
+          "category": "databases",
           "tags": [
-            "discord",
-            "chat",
-            "server-management",
-            "webhooks",
-            "messaging"
+            "airtable",
+            "database-management",
+            "records",
+            "schemas",
+            "crud"
           ],
           "requiresApiKey": false,
           "isRecommended": false,
-          "githubStars": 8,
-          "downloadCount": 1006,
-          "createdAt": "2025-02-19T01:25:52.857709Z",
-          "updatedAt": "2025-02-19T01:25:52.857709Z"
+          "githubStars": 163,
+          "downloadCount": 1045,
+          "createdAt": "2025-02-19T02:22:31.761899Z",
+          "updatedAt": "2025-02-19T02:22:31.761899Z"
         },
         {
           "mcpId": "github.com/supabase-community/mcp-supabase/tree/HEAD/packages/mcp-server-postgrest",
@@ -1861,9 +1854,32 @@
           "requiresApiKey": false,
           "isRecommended": true,
           "githubStars": 1560,
-          "downloadCount": 995,
+          "downloadCount": 1021,
           "createdAt": "2025-02-17T22:27:20.529942Z",
           "updatedAt": "2025-02-17T22:27:20.529942Z"
+        },
+        {
+          "mcpId": "github.com/pashpashpash/mcp-discord",
+          "githubUrl": "https://github.com/pashpashpash/mcp-discord",
+          "name": "Discord",
+          "author": "pashpashpash",
+          "description": "Provides comprehensive Discord server management capabilities including message handling, channel management, role administration, and webhook integration.",
+          "codiconIcon": "comment-discussion",
+          "logoUrl": "https://storage.googleapis.com/cline_public_images/discord.png",
+          "category": "communication",
+          "tags": [
+            "discord",
+            "chat",
+            "server-management",
+            "webhooks",
+            "messaging"
+          ],
+          "requiresApiKey": false,
+          "isRecommended": false,
+          "githubStars": 8,
+          "downloadCount": 1016,
+          "createdAt": "2025-02-19T01:25:52.857709Z",
+          "updatedAt": "2025-02-19T01:25:52.857709Z"
         },
         {
           "mcpId": "github.com/pashpashpash/shopify-mcp-server",
@@ -1883,8 +1899,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": false,
-          "githubStars": 27,
-          "downloadCount": 989,
+          "githubStars": 29,
+          "downloadCount": 1000,
           "createdAt": "2025-02-19T01:26:05.505451Z",
           "updatedAt": "2025-02-19T01:26:05.505451Z"
         },
@@ -1906,8 +1922,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": false,
-          "githubStars": 231,
-          "downloadCount": 966,
+          "githubStars": 236,
+          "downloadCount": 968,
           "createdAt": "2025-03-09T05:49:30.085654Z",
           "updatedAt": "2025-03-09T05:49:30.085654Z"
         },
@@ -1930,7 +1946,7 @@
           "requiresApiKey": false,
           "isRecommended": true,
           "githubStars": 80,
-          "downloadCount": 918,
+          "downloadCount": 950,
           "createdAt": "2025-02-18T06:10:46.800194Z",
           "updatedAt": "2025-02-18T06:10:46.800194Z"
         },
@@ -1953,7 +1969,7 @@
           "requiresApiKey": false,
           "isRecommended": false,
           "githubStars": 86,
-          "downloadCount": 894,
+          "downloadCount": 900,
           "createdAt": "2025-03-10T20:11:10.747447Z",
           "updatedAt": "2025-03-10T20:11:10.747447Z"
         },
@@ -1975,8 +1991,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": false,
-          "githubStars": 618,
-          "downloadCount": 806,
+          "githubStars": 620,
+          "downloadCount": 819,
           "createdAt": "2025-04-12T20:26:22.45373Z",
           "updatedAt": "2025-04-12T20:26:22.45373Z"
         },
@@ -1999,7 +2015,7 @@
           "requiresApiKey": false,
           "isRecommended": true,
           "githubStars": 290,
-          "downloadCount": 760,
+          "downloadCount": 780,
           "createdAt": "2025-02-18T06:28:23.454334Z",
           "updatedAt": "2025-02-18T06:28:23.454334Z"
         },
@@ -2021,33 +2037,10 @@
           ],
           "requiresApiKey": false,
           "isRecommended": false,
-          "githubStars": 3410,
-          "downloadCount": 742,
+          "githubStars": 3664,
+          "downloadCount": 777,
           "createdAt": "2025-04-04T01:22:59.095407Z",
           "updatedAt": "2025-04-04T01:22:59.095407Z"
-        },
-        {
-          "mcpId": "github.com/snaggle-ai/openapi-mcp-server",
-          "githubUrl": "https://github.com/snaggle-ai/openapi-mcp-server",
-          "name": "OpenAPI Proxy",
-          "author": "snaggle-ai",
-          "description": "Creates a proxy server that converts any OpenAPI v3.1 compliant API into Claude-compatible tools, enabling natural language interaction with APIs including file upload support.",
-          "codiconIcon": "link",
-          "logoUrl": "https://storage.googleapis.com/cline_public_images/openapi.png",
-          "category": "developer-tools",
-          "tags": [
-            "openapi",
-            "api-integration",
-            "proxy",
-            "file-upload",
-            "documentation"
-          ],
-          "requiresApiKey": false,
-          "isRecommended": false,
-          "githubStars": 663,
-          "downloadCount": 712,
-          "createdAt": "2025-02-17T22:45:43.055912Z",
-          "updatedAt": "2025-02-17T22:45:43.055912Z"
         },
         {
           "mcpId": "github.com/awslabs/mcp/tree/main/src/terraform-mcp-server",
@@ -2068,9 +2061,32 @@
           "requiresApiKey": false,
           "isRecommended": false,
           "githubStars": 3646,
-          "downloadCount": 703,
+          "downloadCount": 754,
           "createdAt": "2025-04-24T06:32:09.176617Z",
           "updatedAt": "2025-04-24T06:32:09.176617Z"
+        },
+        {
+          "mcpId": "github.com/snaggle-ai/openapi-mcp-server",
+          "githubUrl": "https://github.com/snaggle-ai/openapi-mcp-server",
+          "name": "OpenAPI Proxy",
+          "author": "snaggle-ai",
+          "description": "Creates a proxy server that converts any OpenAPI v3.1 compliant API into Claude-compatible tools, enabling natural language interaction with APIs including file upload support.",
+          "codiconIcon": "link",
+          "logoUrl": "https://storage.googleapis.com/cline_public_images/openapi.png",
+          "category": "developer-tools",
+          "tags": [
+            "openapi",
+            "api-integration",
+            "proxy",
+            "file-upload",
+            "documentation"
+          ],
+          "requiresApiKey": false,
+          "isRecommended": false,
+          "githubStars": 663,
+          "downloadCount": 732,
+          "createdAt": "2025-02-17T22:45:43.055912Z",
+          "updatedAt": "2025-02-17T22:45:43.055912Z"
         },
         {
           "mcpId": "github.com/JetBrains/mcp-jetbrains",
@@ -2091,7 +2107,7 @@
           "requiresApiKey": false,
           "isRecommended": true,
           "githubStars": 728,
-          "downloadCount": 681,
+          "downloadCount": 695,
           "createdAt": "2025-02-17T22:47:35.793534Z",
           "updatedAt": "2025-02-17T22:47:35.793534Z"
         },
@@ -2114,7 +2130,7 @@
           "requiresApiKey": false,
           "isRecommended": false,
           "githubStars": 1895,
-          "downloadCount": 664,
+          "downloadCount": 677,
           "createdAt": "2025-04-15T19:17:25.354899Z",
           "updatedAt": "2025-04-15T19:17:25.354899Z"
         },
@@ -2136,8 +2152,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": false,
-          "githubStars": 1633,
-          "downloadCount": 651,
+          "githubStars": 1659,
+          "downloadCount": 661,
           "createdAt": "2025-03-27T20:04:05.827143Z",
           "updatedAt": "2025-03-27T20:04:05.827143Z"
         },
@@ -2159,8 +2175,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": false,
-          "githubStars": 669,
-          "downloadCount": 487,
+          "githubStars": 940,
+          "downloadCount": 558,
           "createdAt": "2025-05-18T07:54:49.04534Z",
           "updatedAt": "2025-05-18T07:54:49.04534Z"
         },
@@ -2183,32 +2199,9 @@
           "requiresApiKey": false,
           "isRecommended": true,
           "githubStars": 220,
-          "downloadCount": 451,
+          "downloadCount": 466,
           "createdAt": "2025-02-18T05:45:40.818024Z",
           "updatedAt": "2025-02-18T05:45:40.818024Z"
-        },
-        {
-          "mcpId": "github.com/firebase/genkit/tree/HEAD/js/plugins/mcp",
-          "githubUrl": "https://github.com/firebase/genkit/tree/HEAD/js/plugins/mcp",
-          "name": "Genkit Integration",
-          "author": "firebase",
-          "description": "Enables bi-directional integration with Model Context Protocol, allowing applications to both consume MCP tools/prompts as a client and expose Genkit tools/prompts as an MCP server.",
-          "codiconIcon": "extensions",
-          "logoUrl": "https://storage.googleapis.com/cline_public_images/genkit-integration.png",
-          "category": "developer-tools",
-          "tags": [
-            "mcp-integration",
-            "client-server",
-            "tools-prompts",
-            "plugin",
-            "genkit"
-          ],
-          "requiresApiKey": false,
-          "isRecommended": true,
-          "githubStars": 1949,
-          "downloadCount": 412,
-          "createdAt": "2025-02-17T22:27:07.661085Z",
-          "updatedAt": "2025-02-17T22:27:07.661085Z"
         },
         {
           "mcpId": "github.com/auth0/auth0-mcp-server",
@@ -2229,9 +2222,32 @@
           "requiresApiKey": false,
           "isRecommended": false,
           "githubStars": 49,
-          "downloadCount": 411,
+          "downloadCount": 419,
           "createdAt": "2025-04-17T21:21:56.331236Z",
           "updatedAt": "2025-04-17T21:21:56.331236Z"
+        },
+        {
+          "mcpId": "github.com/firebase/genkit/tree/HEAD/js/plugins/mcp",
+          "githubUrl": "https://github.com/firebase/genkit/tree/HEAD/js/plugins/mcp",
+          "name": "Genkit Integration",
+          "author": "firebase",
+          "description": "Enables bi-directional integration with Model Context Protocol, allowing applications to both consume MCP tools/prompts as a client and expose Genkit tools/prompts as an MCP server.",
+          "codiconIcon": "extensions",
+          "logoUrl": "https://storage.googleapis.com/cline_public_images/genkit-integration.png",
+          "category": "developer-tools",
+          "tags": [
+            "mcp-integration",
+            "client-server",
+            "tools-prompts",
+            "plugin",
+            "genkit"
+          ],
+          "requiresApiKey": false,
+          "isRecommended": true,
+          "githubStars": 2010,
+          "downloadCount": 417,
+          "createdAt": "2025-02-17T22:27:07.661085Z",
+          "updatedAt": "2025-02-17T22:27:07.661085Z"
         },
         {
           "mcpId": "github.com/Garoth/sendgrid-mcp",
@@ -2251,8 +2267,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": false,
-          "githubStars": 11,
-          "downloadCount": 406,
+          "githubStars": 12,
+          "downloadCount": 408,
           "createdAt": "2025-02-23T01:48:41.737092Z",
           "updatedAt": "2025-02-23T01:48:41.737092Z"
         },
@@ -2274,33 +2290,33 @@
           ],
           "requiresApiKey": false,
           "isRecommended": false,
-          "githubStars": 97,
-          "downloadCount": 399,
+          "githubStars": 105,
+          "downloadCount": 400,
           "createdAt": "2025-04-08T05:48:29.23484Z",
           "updatedAt": "2025-04-08T05:48:29.23484Z"
         },
         {
-          "mcpId": "github.com/pashpashpash/mcp-server-asana",
-          "githubUrl": "https://github.com/pashpashpash/mcp-server-asana",
-          "name": "Asana",
-          "author": "pashpashpash",
-          "description": "Enables AI assistants to interact with Asana workspaces, providing comprehensive task and project management capabilities including creation, search, updates, and status tracking.",
-          "codiconIcon": "project",
-          "logoUrl": "https://storage.googleapis.com/cline_public_images/asana.png",
-          "category": "developer-tools",
+          "mcpId": "github.com/mobile-next/mobile-mcp",
+          "githubUrl": "https://github.com/mobile-next/mobile-mcp",
+          "name": "Mobile Next",
+          "author": "mobile-next",
+          "description": "Platform-agnostic mobile automation server for iOS and Android that enables AI assistants to interact with mobile apps through accessibility snapshots and coordinate-based interactions on simulators and physical devices.",
+          "codiconIcon": "device-mobile",
+          "logoUrl": "https://storage.googleapis.com/cline_public_images/mobile-next.png",
+          "category": "os-automation",
           "tags": [
-            "project-management",
-            "task-tracking",
-            "team-collaboration",
-            "workflow",
-            "asana-api"
+            "mobile-automation",
+            "ios-android",
+            "app-testing",
+            "device-control",
+            "accessibility"
           ],
           "requiresApiKey": false,
           "isRecommended": false,
-          "githubStars": 3,
-          "downloadCount": 348,
-          "createdAt": "2025-02-18T23:04:35.990279Z",
-          "updatedAt": "2025-02-18T23:04:35.990279Z"
+          "githubStars": 897,
+          "downloadCount": 381,
+          "createdAt": "2025-05-27T00:04:16.60182Z",
+          "updatedAt": "2025-05-27T00:04:16.60182Z"
         },
         {
           "mcpId": "github.com/MiniMax-AI/MiniMax-MCP",
@@ -2321,9 +2337,32 @@
           "requiresApiKey": false,
           "isRecommended": false,
           "githubStars": 532,
-          "downloadCount": 344,
+          "downloadCount": 368,
           "createdAt": "2025-04-24T06:29:55.996417Z",
           "updatedAt": "2025-04-24T06:29:55.996417Z"
+        },
+        {
+          "mcpId": "github.com/pashpashpash/mcp-server-asana",
+          "githubUrl": "https://github.com/pashpashpash/mcp-server-asana",
+          "name": "Asana",
+          "author": "pashpashpash",
+          "description": "Enables AI assistants to interact with Asana workspaces, providing comprehensive task and project management capabilities including creation, search, updates, and status tracking.",
+          "codiconIcon": "project",
+          "logoUrl": "https://storage.googleapis.com/cline_public_images/asana.png",
+          "category": "developer-tools",
+          "tags": [
+            "project-management",
+            "task-tracking",
+            "team-collaboration",
+            "workflow",
+            "asana-api"
+          ],
+          "requiresApiKey": false,
+          "isRecommended": false,
+          "githubStars": 3,
+          "downloadCount": 362,
+          "createdAt": "2025-02-18T23:04:35.990279Z",
+          "updatedAt": "2025-02-18T23:04:35.990279Z"
         },
         {
           "mcpId": "github.com/kagisearch/kagimcp",
@@ -2343,10 +2382,33 @@
           ],
           "requiresApiKey": false,
           "isRecommended": true,
-          "githubStars": 94,
-          "downloadCount": 339,
+          "githubStars": 103,
+          "downloadCount": 344,
           "createdAt": "2025-02-18T06:28:08.669226Z",
           "updatedAt": "2025-02-18T06:28:08.669226Z"
+        },
+        {
+          "mcpId": "github.com/webflow/mcp-server",
+          "githubUrl": "https://github.com/webflow/mcp-server",
+          "name": "Webflow",
+          "author": "webflow",
+          "description": "Enables AI agents to interact with Webflow's APIs for managing sites, pages, and CMS content through features like publishing, content updates, and collection management.",
+          "codiconIcon": "browser",
+          "logoUrl": "https://storage.googleapis.com/cline_public_images/webflow.png",
+          "category": "cloud-platforms",
+          "tags": [
+            "webflow",
+            "cms",
+            "web-development",
+            "content-management",
+            "site-builder"
+          ],
+          "requiresApiKey": false,
+          "isRecommended": false,
+          "githubStars": 36,
+          "downloadCount": 332,
+          "createdAt": "2025-04-24T06:38:52.39813Z",
+          "updatedAt": "2025-04-24T06:38:52.39813Z"
         },
         {
           "mcpId": "github.com/nickbaumann98/everart-forge-mcp",
@@ -2372,52 +2434,6 @@
           "updatedAt": "2025-02-18T23:04:08.935882Z"
         },
         {
-          "mcpId": "github.com/webflow/mcp-server",
-          "githubUrl": "https://github.com/webflow/mcp-server",
-          "name": "Webflow",
-          "author": "webflow",
-          "description": "Enables AI agents to interact with Webflow's APIs for managing sites, pages, and CMS content through features like publishing, content updates, and collection management.",
-          "codiconIcon": "browser",
-          "logoUrl": "https://storage.googleapis.com/cline_public_images/webflow.png",
-          "category": "cloud-platforms",
-          "tags": [
-            "webflow",
-            "cms",
-            "web-development",
-            "content-management",
-            "site-builder"
-          ],
-          "requiresApiKey": false,
-          "isRecommended": false,
-          "githubStars": 36,
-          "downloadCount": 312,
-          "createdAt": "2025-04-24T06:38:52.39813Z",
-          "updatedAt": "2025-04-24T06:38:52.39813Z"
-        },
-        {
-          "mcpId": "github.com/mobile-next/mobile-mcp",
-          "githubUrl": "https://github.com/mobile-next/mobile-mcp",
-          "name": "Mobile Next",
-          "author": "mobile-next",
-          "description": "Platform-agnostic mobile automation server for iOS and Android that enables AI assistants to interact with mobile apps through accessibility snapshots and coordinate-based interactions on simulators and physical devices.",
-          "codiconIcon": "device-mobile",
-          "logoUrl": "https://storage.googleapis.com/cline_public_images/mobile-next.png",
-          "category": "os-automation",
-          "tags": [
-            "mobile-automation",
-            "ios-android",
-            "app-testing",
-            "device-control",
-            "accessibility"
-          ],
-          "requiresApiKey": false,
-          "isRecommended": false,
-          "githubStars": 812,
-          "downloadCount": 288,
-          "createdAt": "2025-05-27T00:04:16.60182Z",
-          "updatedAt": "2025-05-27T00:04:16.60182Z"
-        },
-        {
           "mcpId": "github.com/motherduckdb/mcp-server-motherduck",
           "githubUrl": "https://github.com/motherduckdb/mcp-server-motherduck",
           "name": "MotherDuck",
@@ -2435,8 +2451,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": true,
-          "githubStars": 171,
-          "downloadCount": 246,
+          "githubStars": 188,
+          "downloadCount": 253,
           "createdAt": "2025-02-18T06:08:00.70702Z",
           "updatedAt": "2025-02-18T06:08:00.70702Z"
         },
@@ -2459,7 +2475,7 @@
           "requiresApiKey": false,
           "isRecommended": true,
           "githubStars": 33,
-          "downloadCount": 233,
+          "downloadCount": 237,
           "createdAt": "2025-02-18T06:08:21.891007Z",
           "updatedAt": "2025-02-18T06:08:21.891007Z"
         },
@@ -2482,7 +2498,7 @@
           "requiresApiKey": false,
           "isRecommended": false,
           "githubStars": 1,
-          "downloadCount": 170,
+          "downloadCount": 171,
           "createdAt": "2025-02-18T23:04:46.967859Z",
           "updatedAt": "2025-02-18T23:04:46.967859Z"
         },
@@ -2505,7 +2521,7 @@
           "requiresApiKey": false,
           "isRecommended": false,
           "githubStars": 46,
-          "downloadCount": 153,
+          "downloadCount": 162,
           "createdAt": "2025-04-24T06:27:33.110757Z",
           "updatedAt": "2025-04-24T06:27:33.110757Z"
         },
@@ -2528,7 +2544,7 @@
           "requiresApiKey": false,
           "isRecommended": true,
           "githubStars": 10,
-          "downloadCount": 144,
+          "downloadCount": 145,
           "createdAt": "2025-02-18T06:28:33.910457Z",
           "updatedAt": "2025-02-18T06:28:33.910457Z"
         },
@@ -2551,7 +2567,7 @@
           "requiresApiKey": false,
           "isRecommended": false,
           "githubStars": 25,
-          "downloadCount": 112,
+          "downloadCount": 140,
           "createdAt": "2025-05-22T06:17:32.388563Z",
           "updatedAt": "2025-05-22T06:17:32.388563Z"
         },
@@ -2573,8 +2589,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": false,
-          "githubStars": 17,
-          "downloadCount": 106,
+          "githubStars": 19,
+          "downloadCount": 112,
           "createdAt": "2025-04-24T06:21:03.858176Z",
           "updatedAt": "2025-04-24T06:21:03.858176Z"
         },
@@ -2596,8 +2612,8 @@
           ],
           "requiresApiKey": false,
           "isRecommended": true,
-          "githubStars": 44,
-          "downloadCount": 99,
+          "githubStars": 52,
+          "downloadCount": 102,
           "createdAt": "2025-02-18T06:08:09.63413Z",
           "updatedAt": "2025-02-18T06:08:09.63413Z"
         },
@@ -2620,9 +2636,32 @@
           "requiresApiKey": false,
           "isRecommended": true,
           "githubStars": 19,
-          "downloadCount": 99,
+          "downloadCount": 101,
           "createdAt": "2025-02-18T06:27:56.840721Z",
           "updatedAt": "2025-02-18T06:27:56.840721Z"
+        },
+        {
+          "mcpId": "github.com/PixVerseAI/PixVerse-MCP",
+          "githubUrl": "https://github.com/PixVerseAI/PixVerse-MCP",
+          "name": "PixVerse",
+          "author": "PixVerseAI",
+          "description": "Generate high-quality videos from text descriptions using PixVerse's video generation models, supporting customizable parameters like quality, duration, and aspect ratio.",
+          "codiconIcon": "play-circle",
+          "logoUrl": "https://storage.googleapis.com/cline_public_images/pixverse.png",
+          "category": "image-video-processing",
+          "tags": [
+            "video-generation",
+            "text-to-video",
+            "ai-video",
+            "creative-tools",
+            "media-creation"
+          ],
+          "requiresApiKey": false,
+          "isRecommended": false,
+          "githubStars": 21,
+          "downloadCount": 100,
+          "createdAt": "2025-04-24T06:25:04.896697Z",
+          "updatedAt": "2025-04-24T06:25:04.896697Z"
         },
         {
           "mcpId": "github.com/jean-technologies/mcp-writer-substack",
@@ -2643,7 +2682,7 @@
           "requiresApiKey": false,
           "isRecommended": false,
           "githubStars": 9,
-          "downloadCount": 92,
+          "downloadCount": 96,
           "createdAt": "2025-04-24T06:36:53.326393Z",
           "updatedAt": "2025-04-24T06:36:53.326393Z"
         },
@@ -2665,33 +2704,10 @@
           ],
           "requiresApiKey": false,
           "isRecommended": true,
-          "githubStars": 40,
-          "downloadCount": 91,
+          "githubStars": 41,
+          "downloadCount": 92,
           "createdAt": "2025-02-18T06:07:51.693578Z",
           "updatedAt": "2025-02-18T06:07:51.693578Z"
-        },
-        {
-          "mcpId": "github.com/PixVerseAI/PixVerse-MCP",
-          "githubUrl": "https://github.com/PixVerseAI/PixVerse-MCP",
-          "name": "PixVerse",
-          "author": "PixVerseAI",
-          "description": "Generate high-quality videos from text descriptions using PixVerse's video generation models, supporting customizable parameters like quality, duration, and aspect ratio.",
-          "codiconIcon": "play-circle",
-          "logoUrl": "https://storage.googleapis.com/cline_public_images/pixverse.png",
-          "category": "image-video-processing",
-          "tags": [
-            "video-generation",
-            "text-to-video",
-            "ai-video",
-            "creative-tools",
-            "media-creation"
-          ],
-          "requiresApiKey": false,
-          "isRecommended": false,
-          "githubStars": 21,
-          "downloadCount": 88,
-          "createdAt": "2025-04-24T06:25:04.896697Z",
-          "updatedAt": "2025-04-24T06:25:04.896697Z"
         },
         {
           "mcpId": "github.com/axiomhq/mcp-server-axiom",
@@ -2712,7 +2728,7 @@
           "requiresApiKey": false,
           "isRecommended": true,
           "githubStars": 45,
-          "downloadCount": 76,
+          "downloadCount": 77,
           "createdAt": "2025-02-18T05:45:45.629989Z",
           "updatedAt": "2025-02-18T05:45:45.629989Z"
         },
@@ -2735,9 +2751,32 @@
           "requiresApiKey": false,
           "isRecommended": true,
           "githubStars": 14,
-          "downloadCount": 64,
+          "downloadCount": 65,
           "createdAt": "2025-02-18T05:46:04.573832Z",
           "updatedAt": "2025-02-18T05:46:04.573832Z"
+        },
+        {
+          "mcpId": "github.com/supermemoryai/supermemory-mcp",
+          "githubUrl": "https://github.com/supermemoryai/supermemory-mcp",
+          "name": "Supermemory",
+          "author": "supermemoryai",
+          "description": "Universal memory system that makes personal context and memories available across different LLMs, enabling seamless memory transfer without logins or paywalls.",
+          "codiconIcon": "database",
+          "logoUrl": "https://storage.googleapis.com/cline_public_images/supermemory.png",
+          "category": "knowledge-memory",
+          "tags": [
+            "memory-management",
+            "llm-integration",
+            "context-sharing",
+            "persistence",
+            "knowledge-base"
+          ],
+          "requiresApiKey": false,
+          "isRecommended": false,
+          "githubStars": 835,
+          "downloadCount": 65,
+          "createdAt": "2025-06-10T19:23:15.439727Z",
+          "updatedAt": "2025-06-10T19:23:15.439727Z"
         },
         {
           "mcpId": "github.com/IBM/wxflows/tree/main/examples/mcp/javascript",
@@ -2804,13 +2843,25 @@
           "requiresApiKey": false,
           "isRecommended": true,
           "githubStars": 1,
-          "downloadCount": 37,
+          "downloadCount": 38,
           "createdAt": "2025-02-18T06:27:44.307829Z",
           "updatedAt": "2025-02-18T06:27:44.307829Z"
         }
       ]
     },
     "mode": "code",
-    "customModes": []
+    "customModes": [
+      {
+        "slug": "senior-reverse-engineering-documentation-architect",
+        "name": "Senior Reverse Engineering & Documentation Architect",
+        "roleDefinition": "## Senior Reverse Engineering & Documentation Architect (Project Deconstruction & Specification Synthesis Expert)\n\n**Votre Identité & Mission Fondamentale :**\nVous êtes le **Senior Reverse Engineering & Documentation Architect**, un agent IA expert dans l'analyse de code source existant et la synthèse de documentation technique et fonctionnelle. Votre mission est de **déconstruire méthodiquement un projet logiciel existant** (fourni fichier par fichier ou via des descriptions textuelles détaillées de leur contenu) pour **générer, a posteriori, un ensemble de documents de spécification équivalents** à ceux qui auraient été produits par les agents spécialisés (Requirements, Architecture, UI/UX, Data Model, etc.). Vous agissez comme un archéologue du code, exhumant la logique, la structure et l'intention derrière l'implémentation pour créer une documentation complète et compréhensible.\n\n**Votre Objectif Ultime :**\nProduire un ensemble de documents Markdown (`REVERSE_MASTER_REQUIREMENTS.md`, `REVERSE_SENIOR_ARCHITECTURE.md`, `REVERSE_SENIOR_UIUX_SPECS.md`, `REVERSE_SENIOR_DATABASE_SCHEMA.md`, `REVERSE_TEST_ANALYSIS.md`, `REVERSE_OPERATIONS_OVERVIEW.md`) qui reflètent au mieux l'état actuel et la conception inférée du projet existant. Ces documents visent à faciliter la compréhension, la maintenance, l'évolution ou la refonte du projet. Votre succès se mesure à la précision, la complétude et la clarté de la documentation synthétisée, ainsi qu'à votre capacité à identifier les zones où l'intention originale n'est pas claire à partir du code seul.",
+        "whenToUse": "Quand il faut déconstruire méthodiquement un projet logiciel existant** pour **générer, a posteriori, un ensemble de documents de spécification** (Requirements, Architecture, UI/UX, Data Model, etc.)",
+        "customInstructions": "**Philosophie Directrice : Inférence Logique, Documentation Systématique, Transparence des Hypothèses**\n\n*   **Le Code comme Source de Vérité (Partielle) :** Le code source est votre principal artefact d'analyse, mais vous reconnaissez qu'il ne contient pas toujours toute l'intention ou le contexte métier.\n*   **Inférence et Déduction Prudentes :** Vous tirez des conclusions basées sur les patterns de code, les noms de variables/fonctions, les commentaires, la structure des fichiers, mais vous **distinguez clairement ce qui est explicite de ce qui est inféré**.\n*   **Documentation Systématique :** Vous suivez la structure des documents de spécification des agents \"forward-engineering\" pour organiser les informations extraites.\n*   **Identification des Zones d'Ombre :** Une partie cruciale de votre travail est d'identifier et de signaler les aspects qui ne sont pas clairs à partir du code seul et qui nécessiteraient une validation ou un apport d'information humaine (ex: le \"pourquoi\" métier derrière une fonctionnalité complexe, les exigences non fonctionnelles non mesurables directement dans le code).\n*   **Collaboration pour la Validation :** Les documents que vous générez sont des *ébauches* basées sur votre analyse. Ils nécessiteront une revue et une validation humaines approfondies pour confirmer leur exactitude et combler les lacunes.\n\n**Mandats Opérationnels Inflexibles :**\n\n1.  **Mandat 1 : Plan d'Analyse et Ingestion Structurée du Projet**\n    *   **Demande d'Informations Initiales :**\n        *   Demandez une vue d'ensemble du projet : Quel est son but général ? Quel est le langage principal / le framework utilisé ?\n        *   Demandez la structure principale des dossiers du projet.\n        *   Expliquez que vous aurez besoin du contenu des fichiers un par un ou par lots logiques.\n    *   **Plan d'Analyse (Documenté dans `REVERSE_ANALYSIS_PLAN.md`) :**\n        1.  **Ordre d'Analyse Suggéré :** Proposez un ordre logique pour analyser les fichiers (ex: fichiers de configuration -> modèles de données/ORM -> services/logique métier backend -> contrôleurs/routes API -> composants UI frontend -> tests...).\n        2.  **Types d'Informations à Extraire (Checklist) :** Ce que vous chercherez dans chaque type de fichier (ex: pour un fichier de modèle ORM : noms d'entités, attributs, types, relations, contraintes...).\n        3.  **Structure des Documents à Générer (Rappel) :** Référencez la structure attendue pour chaque document `REVERSE_*.md`.\n    *   **Ingestion Fichier par Fichier (ou Groupe) :** Je vous fournirai le contenu textuel des fichiers. Pour chaque fichier :\n        *   Notez son chemin/nom.\n        *   Analysez son contenu en profondeur.\n\n2.  **Mandat 2 : Extraction et Synthèse pour `REVERSE_MASTER_REQUIREMENTS.md`**\n    *   **Identification des Fonctionnalités :** À partir des endpoints API, des composants UI, des noms de services/fonctions, des commentaires, déduisez les fonctionnalités principales et secondaires.\n    *   **Inférence des Scénarios Utilisateurs :** Essayez de reconstituer les flux utilisateurs typiques en suivant les appels de fonction et les interactions entre composants.\n    *   **Déduction des Règles Métier :** Analysez la logique dans les services, les validateurs, les conditions pour identifier les règles métier implémentées.\n    *   **Identification des Données Manipulées (Haut Niveau) :** Quelles sont les principales entités de données impliquées dans chaque fonctionnalité ?\n    *   **Critères d'Acceptation (Inférés) :** Si les tests sont fournis et clairs, essayez d'en déduire les critères d'acceptation. Sinon, notez leur absence.\n    *   **Exigences Non Fonctionnelles (Indices) :** Cherchez des indices dans le code ou la configuration (timeouts, gestion des erreurs, logs de performance, librairies de sécurité) qui pourraient suggérer des ENF. **Soyez très prudent et indiquez \"inféré\" ou \"indice de\".**\n    *   **Section \"Points à Clarifier / Hypothèses Fonctionnelles\" :** Très important. Listez ici tout ce qui relève de l'intention, du \"pourquoi\", ou des cas non couverts qui ne peuvent être déduits du code.\n\n3.  **Mandat 3 : Extraction et Synthèse pour `REVERSE_SENIOR_ARCHITECTURE.md`**\n    *   **Identification du Style Architectural :** Monolithe ? Microservices (basé sur la structure des dossiers, les appels réseau internes) ? Orienté événements (présence de queues, de handlers d'événements) ?\n    *   **Décomposition en Composants/Modules :** Identifiez les principaux modules/services/couches logiques basés sur l'organisation du code.\n    *   **Technologies Utilisées :** Listez les langages, frameworks, librairies majeures identifiés (via `import`, `require`, fichiers de dépendances comme `package.json`, `pom.xml`, `requirements.txt`).\n    *   **Interactions Inter-Composants :** Comment les modules communiquent-ils (appels de fonction directs, API internes, messages...) ? Quels protocoles semblent utilisés ?\n    *   **Patterns de Conception Utilisés (Si Évidents) :** Identifiez les patterns de conception clairement implémentés (ex: Repository, Service, Factory, Singleton...).\n    *   **Gestion de la Configuration :** Comment le projet semble-t-il gérer sa configuration (fichiers .env, .ini, .yaml, variables d'environnement...) ?\n    *   **Stratégie de Logging (Observée) :** Quelles librairies de logging sont utilisées ? Quel type d'information est logué ?\n    *   **Section \"Hypothèses Architecturales / Zones d'Incertitude\" :** Pour les choix architecturaux dont la raison n'est pas évidente.\n\n4.  **Mandat 4 : Extraction et Synthèse pour `REVERSE_SENIOR_UIUX_SPECS.md`** (avec analyse d'image si vous pouvez \"décrire ce que vous voyez\" à partir du code frontend)\n    *   **Identification des Écrans/Vues/Composants UI :** Basé sur les fichiers de templates (HTML, JSX, Vue, Angular...), les fichiers de routing frontend.\n    *   **Structure des Éléments UI :** Pour chaque composant, listez les éléments HTML/UI principaux.\n    *   **Styles Appliqués (Inférence depuis CSS/SCSS/Styled Components...) :**\n        *   Essayez d'identifier les couleurs (HEX si possible), polices, tailles, espacements appliqués aux éléments via les classes CSS, les styles inline, ou les thèmes.\n        *   **C'est la partie la plus difficile sans analyse visuelle directe.** Vous devrez vous baser sur les noms de classes (ex: `.button-primary`, `.text-large`), les variables CSS/SCSS.\n        *   Si le projet utilise un framework UI (Bootstrap, Material UI, Tailwind), vous pouvez inférer beaucoup à partir des classes utilisées.\n    *   **Interactions (Depuis le Code JavaScript/TypeScript Frontend) :** Identifiez les gestionnaires d'événements (`onClick`, `onSubmit`...), la logique de manipulation du DOM, les appels API effectués depuis le frontend.\n    *   **Flux de Navigation Frontend :** Reconstituez les routes et comment on navigue entre les vues.\n    *   **Accessibilité (Indices) :** Recherchez les attributs ARIA, les balises sémantiques, les alternatives textuelles pour les images.\n    *   **Section \"Spécifications Visuelles Inférées (Validation Humaine Requise)\" et \"Comportements UI à Confirmer\".**\n\n5.  **Mandat 5 : Extraction et Synthèse pour `REVERSE_SENIOR_DATABASE_SCHEMA.md`**\n    *   **Identification du SGBD (Indices) :** Type de connecteur de base de données utilisé, types de données spécifiques dans les modèles/migrations.\n    *   **Analyse des Fichiers de Migration et/ou des Modèles ORM :**\n        *   Listez les tables/collections.\n        *   Pour chaque table/collection : listez les colonnes/champs, leurs types de données (essayez de mapper au type SGBD inféré), les contraintes (NOT NULL, UNIQUE, PK, FK), les valeurs par défaut.\n        *   Identifiez les relations (1-1, 1-N, N-N) basées sur les clés étrangères ou les définitions de l'ORM.\n        *   Listez les index définis.\n    *   **Analyse des Requêtes (Si Visibles) :** Si des requêtes SQL brutes ou des requêtes ORM complexes sont présentes, documentez-les comme exemples d'accès aux données.\n    *   **Section \"Schéma Inféré - Points à Valider / Optimisations Potentielles\".**\n\n6.  **Mandat 6 : Analyse Initiale pour `REVERSE_TEST_ANALYSIS.md`**\n    *   **Identification des Fichiers de Test :** Localisez les répertoires et fichiers de tests (unitaires, intégration...).\n    *   **Frameworks de Test Utilisés.**\n    *   **Analyse de la Couverture (Très Haut Niveau) :** Quels modules/fonctionnalités semblent avoir des tests ? Lesquels n'en ont pas ou peu ? (Basé sur la présence/absence de fichiers de test).\n    *   **Types de Tests Présents :** Est-ce principalement des tests unitaires, d'intégration, E2E (difficile à dire sans exécution) ?\n    *   **Section \"Stratégie de Test Inférée et Recommandations pour Amélioration\".** Vous ne jugez pas la qualité des tests, mais leur présence et leur focus apparent.\n\n7.  **Mandat 7 : Aperçu pour `REVERSE_OPERATIONS_OVERVIEW.md`**\n    *   **Analyse des Fichiers de Configuration de Déploiement (Si Présents) :** `Dockerfile`, `docker-compose.yml`, scripts de déploiement, fichiers de configuration CI/CD (`.gitlab-ci.yml`, `Jenkinsfile`, GitHub Actions workflows...).\n    *   **Dépendances d'Infrastructure (Inférées) :** Le projet semble-t-il nécessiter une BDD externe, un cache, une queue de messages (basé sur les librairies utilisées et la configuration) ?\n    *   **Configuration de Logging/Monitoring (Indices) :** Librairies ou configurations qui suggèrent une stratégie.\n    *   **Section \"Aperçu Opérationnel Inféré - Nombreux Points à Valider Humainement\".**\n\n8.  **Mandat 8 : Transparence et Limitations**\n    *   Dans chaque document, et dans un résumé global, vous **soulignez systématiquement les hypothèses faites, les inférences, et les limites de l'analyse statique du code**.\n    *   Vous indiquez clairement quelles informations **ne peuvent pas** être extraites du code (ex: le \"pourquoi\" métier profond, les discussions de conception originales, les ENF non directement vérifiables).\n\n**Instructions Initiales pour Démarrer :**\n\"Senior Reverse Engineering & Documentation Architect, j'ai un projet existant que j'aimerais documenter.\n1.  Pourriez-vous d'abord me fournir votre `REVERSE_ANALYSIS_PLAN.md` pour que je comprenne votre approche et l'ordre dans lequel vous préféreriez analyser les fichiers ?\n2.  Je commencerai ensuite à vous fournir le contenu des fichiers selon votre plan.\"\n\n**Votre Ethos : Détective du Code, Synthèse Logique, Documentation Structurée, Humilité face à l'Inférence.**",
+        "groups": [
+          "read"
+        ],
+        "source": "global"
+      }
+    ]
   }
 }

@@ -1,4 +1,4 @@
-# EXEMPLE : Spécification des Exigences Maîtres (Master Requirements Specification)
+# Spécification des Exigences Maîtres
 
 Ce document est un exemple de spécification des exigences maîtres, co-créé avec l'Agent Architecte IA. Il sert de source unique de vérité pour le projet, définissant ce que le système doit accomplir, pour qui, et dans quelles conditions.
 
