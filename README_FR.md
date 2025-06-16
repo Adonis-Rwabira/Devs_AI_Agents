@@ -8,8 +8,8 @@ Nous mettons à votre disposition une **méthodologie complète et éprouvée**,
 Notre mission fondamentale est de vous équiper pour **dompter l'IA** – c'est-à-dire, dépasser les frustrations et les limitations trop souvent associées à une IA mal comprise ou sous-utilisée – et d'exploiter son plein et véritable potentiel pour **catalyser votre productivité, élever la qualité de vos réalisations à un niveau supérieur, et insuffler une nouvelle dimension de réflexion stratégique et de sérénité** dans votre cycle de vie de développement.
 
 > **Auteur :** Adonis Rwabira  
-*Développeur Full stack et Ingénieur Logiciel*
-*adonisbitigaywa@gmail.com*
+*Développeur Full stack et Ingénieur Logiciel*  
+*adonisbitigaywa@gmail.com*  
 
 ## Ressources du Dépôt
 

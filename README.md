@@ -7,23 +7,23 @@ We provide you with a **complete and proven methodology**, accompanied by an ars
 
 Our fundamental mission is to equip you to **tame AI** – that is, to overcome the frustrations and limitations too often associated with poorly understood or underutilized AI – and to exploit its full and true potential to **catalyze your productivity, elevate the quality of your achievements to a higher level, and instill a new dimension of strategic thinking and serenity** in your development lifecycle.
 
-> **Author:** Adonis Rwabira
-*Full stack Developer and Software Engineer*
-*adonisbitigaywa@gmail.com*
+> **Author:** Adonis Rwabira  
+*Full stack Developer and Software Engineer*  
+*adonisbitigaywa@gmail.com*  
 
 ## Repository Resources
 
-This repository is the **operational companion and practical toolbox** for our **in-depth, 9-part article series** (available in full in the [`/articles/fr/`](./articles/fr/) folder) titled: **"Tame AI and Boost Your Productivity"**. For a complete assimilation of the underlying philosophy, a deep understanding of the detailed methodological steps, and a mastery of the best practices of this collaborative approach, careful reading of this series is **very strongly recommended**.
+This repository is the **operational companion and practical toolbox** for our **in-depth, 9-part article series** (available in full in the [`/articles/en/`](./articles/en/) folder) titled: **"Tame AI and Boost Your Productivity"**. For a complete assimilation of the underlying philosophy, a deep understanding of the detailed methodological steps, and a mastery of the best practices of this collaborative approach, careful reading of this series is **very strongly recommended**.
 
 Within this repository, you will discover a set of strategic resources:
 
-1.  **Expert System Prompts for AI Agents (viewable in [`/prompts/fr/`](./prompts/fr/))**: These are the "brains" of your future AI partners.
-    *   `AGENT_SENIOR_SOLUTION_ARCHITECT_FR.md`: The complete and meticulously designed system prompt to configure your **"Senior Solution Architect & Adaptive Partner"** AI agent. This agent is your strategic co-designer and master builder for **Phase 1: Holistic Planning and Design Excellence** (requirements elicitation and formalization, technical and software architecture, UI/UX specification with image analysis, data modeling).
-    *   `AGENT_SENIOR_COLLABORATIVE_DEVELOPER_FR.md`: The exhaustive system prompt to configure your **"Senior Collaborative Full-Stack Developer"** AI agent. This agent is your elite technical partner and co-craftsman for **Phase 2: Collaborative Implementation and Superior Quality Code Production** (coding, proactive code review, test design, technical documentation, change management).
-    *   `AGENT_PROMPT_REFINEMENT_ANALYST_FR.md`: The system prompt for a specialized agent, for retrospective analysis of interactions and suggestion of targeted improvements for the operational agents' prompts.
+1.  **Expert System Prompts for AI Agents (viewable in [`/prompts/en/`](./prompts/en/))**: These are the "brains" of your future AI partners.
+    *   `AGENT_SENIOR_SOLUTION_ARCHITECT_EN.md`: The complete and meticulously designed system prompt to configure your **"Senior Solution Architect & Adaptive Partner"** AI agent. This agent is your strategic co-designer and master builder for **Phase 1: Holistic Planning and Design Excellence** (requirements elicitation and formalization, technical and software architecture, UI/UX specification with image analysis, data modeling).
+    *   `AGENT_SENIOR_COLLABORATIVE_DEVELOPER_EN.md`: The exhaustive system prompt to configure your **"Senior Collaborative Full-Stack Developer"** AI agent. This agent is your elite technical partner and co-craftsman for **Phase 2: Collaborative Implementation and Superior Quality Code Production** (coding, proactive code review, test design, technical documentation, change management).
+    *   `AGENT_PROMPT_REFINEMENT_ANALYST_EN.md`: The system prompt for a specialized agent, for retrospective analysis of interactions and suggestion of targeted improvements for the operational agents' prompts.
 2.  **Example Configuration File for Kilo Code (viewable in [`/settings/`](./settings/))**:
     *   `kilo_code_settings.json`: An example file illustrating a possible structure for certain global parameters of the VS Code extension [Kilo Code](https://kilocode.ai/).
-3.  **Illustrative Examples of Deliverables and Artifacts (viewable in [`/examples/fr/`](./examples/fr/))**:
+3.  **Illustrative Examples of Deliverables and Artifacts (viewable in [`/examples/en/`](./examples/en/))**:
     *   This folder, which will grow over time, is intended to provide you with **concrete and illustrative examples** of the types of documents and artifacts produced using this methodology. You will find fragments of functional specifications, excerpts of architecture documents, examples of agent action plans, snippets of implementation logs, etc.
     *   It will also contain **examples of source code for Mermaid or PlantUML diagrams**, which the GitHub platform can display directly, thus offering you a tangible visualization of certain aspects of the design (architecture, flows, data model). These examples are intended to make the methodology even more accessible and stimulate your inspiration.
 4.  **The Complete Article Series (viewable in [`/articles/`](./articles/))**:
@@ -45,7 +45,7 @@ Our methodology aims to:
 
 ## Quick Start Guide
 
-For an exhaustive implementation and to understand all the subtleties, we strongly refer you to [**Part 3 of our complete article series**](./articles/fr/part3_guide_pratique_configuration_kilo_code.md), available in the [`/articles/fr/`](./articles/fr/) folder. Nevertheless, here is a condensed overview to get you started:
+For an exhaustive implementation and to understand all the subtleties, we strongly refer you to [**Part 3 of our complete article series**](./articles/en/part3_guide_pratique_configuration_kilo_code.md), available in the [`/articles/en/`](./articles/en/) folder. Nevertheless, here is a condensed overview to get you started:
 
 1.  **Essential Prerequisites:**
     *   Visual Studio Code and Git must be installed and functional on your machine.
@@ -60,13 +60,13 @@ For an exhaustive implementation and to understand all the subtleties, we strong
     *   Use your extension's mode management interface (Kilo Code, Roo-Code) to create a new "custom mode" (or "custom agent"). For detailed instructions, refer to your tool's documentation (ex: [Kilo Code - Custom Modes](https://kilocode.ai/docs/features/custom-modes)).
     *   **For the "Senior Solution Architect & Adaptive Partner" Agent:**
         *   Give your mode an explicit name (ex: `My Strategic AI Architect`).
-        *   Copy the entire content of the file [`prompts/fr/AGENT_SENIOR_SOLUTION_ARCHITECT_FR.md`](./prompts/fr/AGENT_SENIOR_SOLUTION_ARCHITECT_FR.md) and paste it into the field **System Prompt** (or equivalent) of this mode's configuration.
+        *   Copy the entire content of the file [`prompts/en/AGENT_SENIOR_SOLUTION_ARCHITECT_EN.md`](./prompts/en/AGENT_SENIOR_SOLUTION_ARCHITECT_EN.md) and paste it into the field **System Prompt** (or equivalent) of this mode's configuration.
         *   Select the AI model you want to use (ex: `gemini-2.5-pro-preview-0605` for in-depth analysis).
         *   Enable the necessary "Tools" (capabilities), such as file system access for reading/writing (always with your approval for writing actions).
         *   Save this mode.
     *   **For the "Senior Collaborative Full-Stack Developer" Agent:**
         *   Create a second custom mode (ex: `My Elite AI Co-Developer`).
-        *   Copy the entire content of the file [`prompts/fr/AGENT_SENIOR_COLLABORATIVE_DEVELOPER_FR.md`](./prompts/fr/AGENT_SENIOR_COLLABORATIVE_DEVELOPER_FR.md) and paste it into the **System Prompt** of this mode.
+        *   Copy the entire content of the file [`prompts/en/AGENT_SENIOR_COLLABORATIVE_DEVELOPER_EN.md`](./prompts/en/AGENT_SENIOR_COLLABORATIVE_DEVELOPER_EN.md) and paste it into the **System Prompt** of this mode.
         *   Select the appropriate AI model (ex: `gemini-2.5-flash-latest` for responsive coding assistance, or the Pro version for more complex tasks).
         *   Enable relevant "Tools" (ex: File System Read/Write, Terminal Access – ensuring that approval for sensitive actions is configured to require your manual validation, see for example [Kilo Code - Action Approval](https://kilocode.ai/docs/features/auto-approving-actions)).
         *   Save this mode.
@@ -85,4 +85,4 @@ It is together, through the open sharing of our knowledge and experiences, that 
 
 ---
 
-Thank you for your passionate interest in **Devs_AI_Agents**! We enthusiastically encourage you to immerse yourself in the **complete article series**, available in its entirety in the [`/articles/fr/`](./articles/fr/) folder, and to explore in detail the concrete examples provided in the [`/examples/fr/`](./examples/fr/) folder to see this methodology in action.
+Thank you for your passionate interest in **Devs_AI_Agents**! We enthusiastically encourage you to immerse yourself in the **complete article series**, available in its entirety in the [`/articles/en/`](./articles/en/) folder, and to explore in detail the concrete examples provided in the [`/examples/en/`](./examples/en/) folder to see this methodology in action.
